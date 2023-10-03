@@ -1,0 +1,34 @@
+name: task_app
+description: App Akademie Task App
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  cached_network_image: ^3.2.3
+  collection: ^1.17.2
+  flutter:
+    sdk: flutter
+  freezed_annotation: ^2.4.1
+  google_fonts: ^5.1.0
+  http: ^1.1.0
+  image_picker: ^1.0.4
+  json_annotation: ^4.8.0
+  shimmer: ^3.0.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.7.1
+  freezed: ^2.4.2
+  build_runner: ^2.4.6
+  flutter_lints: ^2.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/tasks/
