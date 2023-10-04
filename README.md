@@ -7,7 +7,8 @@
 ### Setup for new Batches
 
 1. Fork this repository for your batch
-2. Share the repository with the batch students
+2. Remove / Update `README.md`
+3. Share the repository with the batch students
 
 ### Add sample solutions
 
