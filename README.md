@@ -1,12 +1,26 @@
 # App Akademie Task App
 
-## Setup for new Batches
+## Setup
+
+### Setup for new Batches
 
 1. Fork this repository for your batch
-2. Delete the contents of sample solutions
-3. Share the repository with the batch students
+2. Share the repository with the batch students
 
-# New Task
+### Add sample solutions
+
+1. [Copy the contents of the sample solution file](https://github.dev/DavidAppAkademie/task_app_sample_solutions)
+2. Paste the contents of the sample solution file into the same sample solution file in the forked repository.
+3. Save, commit, push
+
+### Update the app
+
+1. `git remote add upstream https://github.com/DavidAppAkademie/task_app`
+2. `git fetch upstream`
+3. `git rebase upstream/main`
+4. Sync changes
+
+## New Task
 
 ### @Tuts 🧑‍🏫
 
