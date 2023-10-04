@@ -2,9 +2,9 @@
 
 ## Setup for new Batches
 
-1. Fork this repo for your batch
+1. Fork this repository for your batch
 2. Delete the contents of sample solutions
-3. Share the repo with the batch students
+3. Share the repository with the batch students
 
 # New Task
 
