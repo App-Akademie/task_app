@@ -4,7 +4,7 @@
 
 [Video-Anleitung für Dozenten / Tuts](https://www.youtube.com/watch?v=lqVHxKlN0zA)
 
-[Video-Anleitung für TN](https://www.youtube.com/watch?v=lqVHxKlN0zA)
+[Video-Anleitung für TN](https://www.youtube.com/watch?v=VHsAfd0oumM)
 
 ### Setup for new Batches
 
