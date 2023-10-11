@@ -2,7 +2,9 @@
 
 ## Setup
 
-[![Anleitung](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/YouTube_Logo_%282013-2017%29.svg/512px-YouTube_Logo_%282013-2017%29.svg.png?20170829195655)](https://www.youtube.com/watch?v=lqVHxKlN0zA)
+[Video-Anleitung für Dozenten / Tuts](https://www.youtube.com/watch?v=lqVHxKlN0zA)
+
+[Video-Anleitung für TN](https://www.youtube.com/watch?v=lqVHxKlN0zA)
 
 ### Setup for new Batches
 
