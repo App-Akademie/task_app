@@ -86,6 +86,21 @@ Hinweis 1: Ein Anagramm ist ein Wort, das durch Umstellen der Buchstaben eines a
 Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isAnagram` implementieren.
 """,
 );
+const TaskModel t_3_3_8_7 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 7,
+  taskTitel: "PIN Hacker",
+  taskText:
+      """Erstelle eine Funktion, die einen 4-stelligen PIN hackt. Die Funktion soll einen `String` zurückgeben. Die Funktion soll den PIN hacken und zurückgeben.
+Nutze die vorgegeben Funktion `_isPinCorrect()` um zu überprüfen, ob der PIN korrekt ist. Die Funktion `_isPinCorrect()` nimmt einen `String` entgegen und gibt einen `bool` zurück. Die Funktion `_isPinCorrect()` ist bereits fertig implementiert.
+
+Hinweis 1: Hacke den PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du den richtigen PIN gefunden hast.
+Hinweis 2: Der PIN ist eine 4-stellige Zahl.
+Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.
+""",
+);
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,

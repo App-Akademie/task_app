@@ -26,6 +26,10 @@ const List<Task> chapter3TaskList = [
     taskModel: t_3_3_8_6,
     // solution: S3386(),
   ),
+  Task(
+    taskModel: t_3_3_8_7,
+    // solution: S3387(),
+  ),
 ];
 const List<Task> chapter4TaskList = [
   Task(
