@@ -46,6 +46,18 @@ const TaskModel t_3_3_8_3 = TaskModel(
 Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `formatSeconds` implementieren.
 """,
 );
+const TaskModel t_3_3_8_4 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 4,
+  taskTitel: "Vowel Counter",
+  taskText:
+      """Erstelle eine Funktion, die die Anzahl der Vokale in einem gegebenen String zählt. Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `int` zurückgeben. Die Funktion soll die Anzahl der Vokale im String zählen und zurückgeben. Beispiel: "Hallo Welt" -> 3
+
+Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `countVowels` implementieren.
+""",
+);
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
