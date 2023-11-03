@@ -31,7 +31,7 @@ class _S3381State extends State<S3381> {
           height: 32,
         ),
         Text(
-          output == null ? '' : output.toString(),
+          output?.toString() ?? '',
           style: const TextStyle(fontSize: 24),
         ),
         const SizedBox(
