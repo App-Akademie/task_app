@@ -30,7 +30,9 @@ const TaskModel t_3_3_8_2 = TaskModel(
   taskText:
       """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn die Zahl eine Primzahl ist, ansonsten `false`.
 
-Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPrime` implementieren.""",
+Hinweis 1: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPrime` implementieren.
+Hinweis 2: Weder 0 noch 1 sind Primzahlen.
+""",
 );
 
 const TaskModel t_4_5_1_1 = TaskModel(
