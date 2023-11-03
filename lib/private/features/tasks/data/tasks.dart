@@ -21,6 +21,18 @@ const TaskModel t_3_3_8_1 = TaskModel(
 Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `reverseNumber` implementieren.""",
 );
 
+const TaskModel t_3_3_8_2 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 2,
+  taskTitel: "Prim Checker",
+  taskText:
+      """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn die Zahl eine Primzahl ist, ansonsten `false`.
+
+Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPrime` implementieren.""",
+);
+
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
