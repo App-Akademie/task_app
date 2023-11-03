@@ -9,6 +9,7 @@ environment:
 dependencies:
   cached_network_image: ^3.2.3
   collection: ^1.17.2
+  crypto: ^3.0.3
   flutter:
     sdk: flutter
   freezed_annotation: ^2.4.1
