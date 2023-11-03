@@ -72,6 +72,20 @@ Hinweis 1: Ein Palindrom ist ein Wort, das vorwärts und rückwärts gelesen das
 Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPalindrome` implementieren.
 """,
 );
+const TaskModel t_3_3_8_6 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 6,
+  taskTitel: "Anagram Checker",
+  taskText:
+      """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Anagramm ist. Die Funktion soll zwei Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn die beiden Strings Anagramme sind, ansonsten `false`.
+Beispiel: "Provider" und "Riverpod" -> true, "Hallo" und "Welt" -> false
+
+Hinweis 1: Ein Anagramm ist ein Wort, das durch Umstellen der Buchstaben eines anderen Wortes entsteht.
+Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isAnagram` implementieren.
+""",
+);
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,

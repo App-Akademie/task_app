@@ -44,7 +44,7 @@ class _S3385State extends State<S3385> {
               output = isPalindrome(input) ? 'Palindrom' : 'Kein Palindrom';
             });
           },
-          child: const Text('Zähle Vokale'),
+          child: const Text('Prüfe Palindrom'),
         ),
       ],
     );
