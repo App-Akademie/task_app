@@ -34,7 +34,18 @@ Hinweis 1: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `i
 Hinweis 2: Weder 0 noch 1 sind Primzahlen.
 """,
 );
+const TaskModel t_3_3_8_3 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 3,
+  taskTitel: "Seconds Formatter",
+  taskText:
+      """Erstelle eine Funktion, die eine gegebene Anzahl an Sekunden in Stunden, Minuten und Sekunden umrechnet. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `String` zurückgeben. Die Funktion soll die Sekunden in Stunden, Minuten und Sekunden umrechnen und als String zurückgeben. Beispiel: 12345 Sekunden -> 3 Stunden, 25 Minuten, 45 Sekunden
 
+Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `formatSeconds` implementieren.
+""",
+);
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
