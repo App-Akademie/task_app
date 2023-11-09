@@ -101,6 +101,21 @@ Hinweis 2: Der PIN ist eine 4-stellige Zahl.
 Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.
 """,
 );
+
+const TaskModel t_3_3_8_8 = TaskModel(
+  chapter: 3,
+  subChapter: 3,
+  lesson: 8,
+  taskNumber: 8,
+  taskTitel: "Multiply Advanced",
+  taskText:
+      """Erstelle eine Funktion, die 2 gegebene Zahlen miteinander multipliziert. 
+Du darfst dabei jedoch nicht den Operator der Multiplikation verwenden (*).
+
+Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `multiplyAdvanced` implementieren.
+""",
+);
+
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
