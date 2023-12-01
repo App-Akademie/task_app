@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_3/subchapter_3/s_3_3_8_6.dart';
+import 'package:task_app/solutions/solutions.dart';
 
 void main() {
   group('anagrams', () {
