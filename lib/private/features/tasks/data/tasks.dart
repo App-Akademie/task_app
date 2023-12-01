@@ -30,8 +30,8 @@ const TaskModel t_3_3_8_2 = TaskModel(
   taskText:
       """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn die Zahl eine Primzahl ist, ansonsten `false`.
 
-Hinweis 1: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPrime` implementieren.
-Hinweis 2: Weder 0 noch 1 sind Primzahlen.
+**Hinweis 1: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPrime` implementieren.**
+**Hinweis 2: Weder 0 noch 1 sind Primzahlen**.
 """,
 );
 const TaskModel t_3_3_8_3 = TaskModel(
@@ -43,7 +43,7 @@ const TaskModel t_3_3_8_3 = TaskModel(
   taskText:
       """Erstelle eine Funktion, die eine gegebene Anzahl an Sekunden in Stunden, Minuten und Sekunden umrechnet. Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `String` zurückgeben. Die Funktion soll die Sekunden in Stunden, Minuten und Sekunden umrechnen und als String zurückgeben. Beispiel: 12345 Sekunden -> 3 Stunden, 25 Minuten, 45 Sekunden
 
-Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `formatSeconds` implementieren.
+**Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `formatSeconds` implementieren.**
 """,
 );
 const TaskModel t_3_3_8_4 = TaskModel(
@@ -55,7 +55,7 @@ const TaskModel t_3_3_8_4 = TaskModel(
   taskText:
       """Erstelle eine Funktion, die die Anzahl der Vokale in einem gegebenen String zählt. Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `int` zurückgeben. Die Funktion soll die Anzahl der Vokale im String zählen und zurückgeben. Beispiel: "Hallo Welt" -> 3
 
-Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `countVowels` implementieren.
+**Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `countVowels` implementieren.**
 """,
 );
 const TaskModel t_3_3_8_5 = TaskModel(
@@ -68,8 +68,8 @@ const TaskModel t_3_3_8_5 = TaskModel(
       """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Palindrom ist. Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn der String ein Palindrom ist, ansonsten `false`.
 Beispiel: "Anna" -> true, "Hallo" -> false
 
-Hinweis 1: Ein Palindrom ist ein Wort, das vorwärts und rückwärts gelesen das gleiche Wort ergibt.
-Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPalindrome` implementieren.
+**Hinweis 1: Ein Palindrom ist ein Wort, das vorwärts und rückwärts gelesen das gleiche Wort ergibt.**
+**Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPalindrome` implementieren.**
 """,
 );
 const TaskModel t_3_3_8_6 = TaskModel(
@@ -82,8 +82,8 @@ const TaskModel t_3_3_8_6 = TaskModel(
       """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Anagramm ist. Die Funktion soll zwei Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben. Die Funktion soll `true` zurückgeben, wenn die beiden Strings Anagramme sind, ansonsten `false`.
 Beispiel: "Provider" und "Riverpod" -> true, "Hallo" und "Welt" -> false
 
-Hinweis 1: Ein Anagramm ist ein Wort, das durch Umstellen der Buchstaben eines anderen Wortes entsteht.
-Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isAnagram` implementieren.
+**Hinweis 1: Ein Anagramm ist ein Wort, das durch Umstellen der Buchstaben eines anderen Wortes entsteht.**
+**Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isAnagram` implementieren.**
 """,
 );
 const TaskModel t_3_3_8_7 = TaskModel(
@@ -96,9 +96,9 @@ const TaskModel t_3_3_8_7 = TaskModel(
       """Erstelle eine Funktion, die einen 4-stelligen PIN hackt. Die Funktion soll einen `String` zurückgeben. Die Funktion soll den PIN hacken und zurückgeben.
 Nutze die vorgegeben Funktion `_isPinCorrect()` um zu überprüfen, ob der PIN korrekt ist. Die Funktion `_isPinCorrect()` nimmt einen `String` entgegen und gibt einen `bool` zurück. Die Funktion `_isPinCorrect()` ist bereits fertig implementiert.
 
-Hinweis 1: Hacke den PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du den richtigen PIN gefunden hast.
-Hinweis 2: Der PIN ist eine 4-stellige Zahl.
-Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.
+**Hinweis 1: Hacke den PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du den richtigen PIN gefunden hast.**
+**Hinweis 2: Der PIN ist eine 4-stellige Zahl.**
+**Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.**
 """,
 );
 
@@ -112,7 +112,7 @@ const TaskModel t_3_3_8_8 = TaskModel(
       """Erstelle eine Funktion, die 2 gegebene Zahlen miteinander multipliziert. 
 Du darfst dabei jedoch nicht den Operator der Multiplikation verwenden (*).
 
-Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `multiplyAdvanced` implementieren.
+**Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `multiplyAdvanced` implementieren.**
 """,
 );
 
