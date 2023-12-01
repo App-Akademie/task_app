@@ -1,3 +1,11 @@
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_1.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_2.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_3.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_4.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_5.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_6.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_7.dart';
+export './chapter_3/subchapter_3/lesson_8/s_3_3_8_8.dart';
 export './chapter_4/subchapter_5/lesson_1/s_4_5_1_1.dart';
 export './chapter_4/subchapter_5/lesson_2/s_4_5_2_1.dart';
 export './chapter_4/subchapter_5/lesson_2/s_4_5_2_2.dart';
