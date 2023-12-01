@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/config/palette.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/unsolved_task.dart';
 
@@ -12,8 +13,24 @@ class TaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-            "Aufgabe ${task.taskModel.fullTaskNumberString}: ${task.taskModel.taskTitel}"),
+        backgroundColor: dreamlessBlack,
+        toolbarHeight: 96,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              textAlign: TextAlign.start,
+              "Kapitel ${task.chapter}: ${task.taskModel.lessonTitle}",
+              style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                  color: barcelonaOrange, fontWeight: FontWeight.bold),
+            ),
+            gapH4,
+            Text(
+                "Aufgabe ${task.taskModel.fullTaskNumberString}: ${task.taskModel.taskTitel}",
+                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                    color: Colors.white, fontWeight: FontWeight.bold)),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -21,7 +38,7 @@ class TaskScreen extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                Text("Aufgabe:", style: Theme.of(context).textTheme.titleLarge),
+                _taskSolutionTitle(context: context, isSolutionTitle: false),
                 gapH16,
                 Text(task.taskModel.taskText,
                     style: Theme.of(context).textTheme.titleMedium),
@@ -30,7 +47,7 @@ class TaskScreen extends StatelessWidget {
                   Image.asset(task.taskModel.taskImagePath!),
                 ],
                 gapH32,
-                Text("Lösung:", style: Theme.of(context).textTheme.titleLarge),
+                _taskSolutionTitle(context: context, isSolutionTitle: true),
                 gapH16,
                 task.solution ?? const UnsolvedTask(),
               ],
@@ -38,6 +55,24 @@ class TaskScreen extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Row _taskSolutionTitle(
+      {required BuildContext context, required bool isSolutionTitle}) {
+    return Row(
+      children: [
+        Container(
+          color: dreamlessBlack,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(
+                horizontal: Sizes.p16, vertical: Sizes.p4),
+            child: Text(isSolutionTitle ? "Lösung" : "Aufgabe",
+                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    color: Colors.white, fontWeight: FontWeight.bold)),
+          ),
+        ),
+      ],
     );
   }
 }
