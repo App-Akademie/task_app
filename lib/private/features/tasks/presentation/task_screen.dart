@@ -3,6 +3,7 @@ import 'package:task_app/private/config/app_sizes.dart';
 import 'package:task_app/private/config/palette.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/unsolved_task.dart';
+import 'package:task_app/private/features/text_parsing/presentation/task_text.dart';
 
 class TaskScreen extends StatelessWidget {
   final Task task;
@@ -40,8 +41,7 @@ class TaskScreen extends StatelessWidget {
               children: [
                 _taskSolutionTitle(context: context, isSolutionTitle: false),
                 gapH16,
-                Text(task.taskModel.taskText,
-                    style: Theme.of(context).textTheme.titleMedium),
+                TaskText(text: task.taskModel.taskText),
                 if (task.taskModel.taskImagePath != null) ...[
                   gapH16,
                   Image.asset(task.taskModel.taskImagePath!),
