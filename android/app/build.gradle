@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 android {
     namespace "com.example.task_app"
-    compileSdkVersion 31
+    compileSdkVersion 33
     ndkVersion "25.1.8937393"
 
     compileOptions {
