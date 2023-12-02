@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/theme.dart';
-import 'package:task_app/private/features/settings/settings_controller.dart';
+import 'package:task_app/private/features/settings/data/settings_controller.dart';
 import 'package:task_app/private/features/tasks/presentation/navigation_screens/navigation_screens.dart';
 
 class App extends StatelessWidget {
@@ -18,6 +18,7 @@ class App extends StatelessWidget {
           theme: themeData(isDarkTheme: false, context: context),
           darkTheme: themeData(isDarkTheme: true, context: context),
           themeMode: settingsController.themeMode,
+          debugShowCheckedModeBanner: false,
         );
       },
       listenable: settingsController,

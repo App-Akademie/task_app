@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 import 'package:task_app/private/config/app_sizes.dart';
-import 'package:task_app/private/features/settings/settings_controller.dart';
+import 'package:task_app/private/features/settings/data/settings_controller.dart';
+import 'package:task_app/private/features/settings/presentation/dark_mode_switch.dart';
 import 'package:task_app/private/features/tasks/application/solved_function_arg.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/progress.dart';
 
-class NavigationScreen extends StatelessWidget {
+class NavigationScreen extends StatefulWidget {
   static const routeName = '/NavigationScreen';
 
   final NavigationScreenType navigationScreenType;
@@ -47,28 +49,31 @@ class NavigationScreen extends StatelessWidget {
     this.showDarkModeSwitch = false,
     this.showAppBarIcon = false,
   }) : super(key: key);
+
+  @override
+  State<NavigationScreen> createState() => _NavigationScreenState();
+}
+
+class _NavigationScreenState extends State<NavigationScreen> {
+  StateMachineController? controller;
+  SMIInput<bool>? switchInput;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: showAppBarIcon
+        leading: widget.showAppBarIcon
             ? Image.asset('assets/images/icon_light_bg.jpg')
             : null,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(scaffoldTitle),
-            showDarkModeSwitch
-                ? Switch(
-                    value: settingsController.themeMode == ThemeMode.dark ||
-                        (settingsController.themeMode == ThemeMode.system &&
-                            MediaQuery.of(context).platformBrightness ==
-                                Brightness.dark),
-                    onChanged: (v) {
-                      settingsController.updateThemeMode(
-                          v ? ThemeMode.dark : ThemeMode.light);
-                    })
-                : const SizedBox(),
+            Expanded(child: Text(widget.scaffoldTitle)),
+            Flexible(
+              child: widget.showDarkModeSwitch
+                  ? DarkModeSwitch(
+                      settingsController: widget.settingsController)
+                  : const SizedBox.shrink(),
+            ),
           ],
         ),
       ),
@@ -78,29 +83,30 @@ class NavigationScreen extends StatelessWidget {
           child: Column(
             children: [
               Progress(
-                tasks: tasks,
-                progressTitle: progressTitle,
+                tasks: widget.tasks,
+                progressTitle: widget.progressTitle,
               ),
               gapH16,
               const Divider(),
               gapH16,
-              for (final task in sortedStrippedTasksFunction(tasks))
+              for (final task
+                  in widget.sortedStrippedTasksFunction(widget.tasks))
                 ListTile(
-                  leading: (solvedFunction == null
+                  leading: (widget.solvedFunction == null
                           ? task.solved
-                          : solvedFunction!(
-                              tasks,
+                          : widget.solvedFunction!(
+                              widget.tasks,
                               getSolvedFunctionArgument(
-                                  task, navigationScreenType)))
+                                  task, widget.navigationScreenType)))
                       ? Icon(Icons.check,
                           color: Theme.of(context).colorScheme.primary)
                       : const Icon(null),
-                  title: Text(tileTextFunction(task)),
+                  title: Text(widget.tileTextFunction(task)),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => routeWidgetFunction(task),
+                        builder: (context) => widget.routeWidgetFunction(task),
                       ),
                     );
                   },

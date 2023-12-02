@@ -17,6 +17,7 @@ dependencies:
   http: ^1.1.0
   image_picker: ^1.0.4
   json_annotation: ^4.8.0
+  rive: ^0.12.3
   shared_preferences: ^2.2.2
   shimmer: ^3.0.0
 dev_dependencies:
@@ -34,3 +35,4 @@ flutter:
   assets:
     - assets/images/
     - assets/images/tasks/
+    - assets/animations/

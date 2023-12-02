@@ -1,4 +1,4 @@
-import 'package:task_app/private/features/settings/settings_controller.dart';
+import 'package:task_app/private/features/settings/data/settings_controller.dart';
 import 'package:task_app/private/features/tasks/application/filter_tasks.dart';
 import 'package:task_app/private/features/tasks/application/solved_function_arg.dart';
 import 'package:task_app/private/features/tasks/application/solved_tasks.dart';
