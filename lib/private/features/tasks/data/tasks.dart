@@ -9,6 +9,7 @@ const List<Task> globalTaskList = [
   ...chapter6TaskList,
 ];
 
+/// Reverse Number
 const TaskModel t_3_3_8_1 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -23,12 +24,13 @@ Beispiel: 1234 → 4321
 **Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `reverseNumber` implementieren.**""",
 );
 
+/// Prime Checker
 const TaskModel t_3_3_8_2 = TaskModel(
   chapter: 3,
   subChapter: 3,
   lesson: 8,
   taskNumber: 2,
-  taskTitel: "Prim Checker",
+  taskTitel: "Prime Checker",
   taskText:
       """Erstelle eine Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist.
 Die Funktion soll einen Parameter vom Typ `int` entgegennehmen und einen `bool` zurückgeben.
@@ -38,6 +40,8 @@ Die Funktion soll `true` zurückgeben, wenn die Zahl eine Primzahl ist, ansonste
 **Hinweis 2: Weder 0 noch 1 sind Primzahlen**.
 """,
 );
+
+/// Seconds Formatter
 const TaskModel t_3_3_8_3 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -54,6 +58,8 @@ Beispiel: 12345 Sekunden → 3 Stunden, 25 Minuten, 45 Sekunden
 **Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `formatSeconds` implementieren.**
 """,
 );
+
+/// Vowel Counter
 const TaskModel t_3_3_8_4 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -70,12 +76,14 @@ Beispiel: "Hallo Welt" → 3
 **Hinweis: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `countVowels` implementieren.**
 """,
 );
+
+/// Palindrome Checker
 const TaskModel t_3_3_8_5 = TaskModel(
   chapter: 3,
   subChapter: 3,
   lesson: 8,
   taskNumber: 5,
-  taskTitel: "Palindrom Checker",
+  taskTitel: "Palindrome Checker",
   taskText:
       """Erstelle eine Funktion, die überprüft, ob ein gegebener String ein Palindrom ist.
 Die Funktion soll einen Parameter vom Typ `String` entgegennehmen und einen `bool` zurückgeben.
@@ -87,6 +95,8 @@ Beispiel: "Anna" → true, "Hallo" → false
 **Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isPalindrome` implementieren.**
 """,
 );
+
+/// Anagram Checker
 const TaskModel t_3_3_8_6 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -104,6 +114,8 @@ Beispiele: "Provider" und "Riverpod" → true, "Hallo" und "Welt" → false
 **Hinweis 2: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `isAnagram` implementieren.**
 """,
 );
+
+/// PIN Hacker
 const TaskModel t_3_3_8_7 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -116,12 +128,13 @@ Die Funktion soll die PIN hacken und zurückgeben.
 Nutze die vorgegeben Funktion `_isPinCorrect()` um zu überprüfen, ob die PIN korrekt ist.
 Die Funktion `_isPinCorrect()` nimmt einen `String` entgegen und gibt einen `bool` zurück. Die Funktion `_isPinCorrect()` ist bereits fertig implementiert.
 
-**Hinweis 1: Hacke die PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du die richtigen PIN gefunden hast.**
-**Hinweis 2: Die PIN ist eine 4-stellige Zahl.**
+**Hinweis 1: Hacke den PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du den richtigen PIN gefunden hast.**
+**Hinweis 2: Der PIN ist eine 4-stellige Zahl.**
 **Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.**
 """,
 );
 
+/// Multiply Advanced
 const TaskModel t_3_3_8_8 = TaskModel(
   chapter: 3,
   subChapter: 3,
@@ -136,6 +149,7 @@ Du darfst dabei jedoch nicht den Operator der Multiplikation verwenden (`*`).
 """,
 );
 
+/// Hello World
 const TaskModel t_4_5_1_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
@@ -145,6 +159,7 @@ const TaskModel t_4_5_1_1 = TaskModel(
     taskText:
         """Implementiere ein Stateless Widget mit einem `Hello World`-Text-Widget.""");
 
+/// Hello World (zentriert)
 const TaskModel t_4_5_2_1 = TaskModel(
     chapter: 4,
     subChapter: 5,
@@ -154,6 +169,7 @@ const TaskModel t_4_5_2_1 = TaskModel(
     taskText:
         """Erstelle ein Stateless Widget, das ein `Center`-Widget mit einem zentrierten `Hello World`-Text-Widget anzeigt.""");
 
+/// Hello Name!
 const TaskModel t_4_5_2_2 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -167,6 +183,7 @@ Positioniere den Text oberhalb des Buttons. Der Button soll die Beschriftung `Kl
 **Hinweis: Der Button muss erstmal noch nicht auf einen Klick reagieren.**""",
 );
 
+/// Show Name Button
 const TaskModel t_4_5_2_3 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -179,6 +196,7 @@ Integriere ein `Text`-Widget und einen `ElevatedButton` in das UI. Das `Text`-Wi
 Der Button soll mit `Name anzeigen` beschriftet sein. Bei einem Klick auf den Button soll der State auf deinen Namen gesetzt werden, und der neue State soll im `Text`-Widget dargestellt werden.""",
 );
 
+/// Show / hide Name Button
 const TaskModel t_4_5_2_4 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -194,6 +212,7 @@ Klickt man jetzt auf den Button, soll der Name wieder verschwinden.
 Der Name soll also beliebig oft angezeigt und versteckt werden können.""", //da
 );
 
+/// Blue Containers
 const TaskModel t_4_5_3_1 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -205,6 +224,7 @@ Jeder `Container` soll eine Höhe und Breite von 100 haben.
 Färbe den ersten Container `blueGrey`, den zweiten `blue` und den dritten `cyan`.""", //da
 );
 
+/// Text Styles
 const TaskModel t_4_5_3_2 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -218,6 +238,7 @@ Das zweite `Text`-Widget soll eine Schriftgröße von 16 haben, fett und blau se
 Das dritte `Text`-Widget soll eine Schriftgröße von 10 haben, kursiv (italic) und grün sein.""", //da
 );
 
+/// Center in Column
 const TaskModel t_4_5_3_3 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -228,6 +249,8 @@ const TaskModel t_4_5_3_3 = TaskModel(
 Integriere darin eine `Column` mit zwei `Text`-Elementen: `App` und `Akademie`.
 Zentriere beide Texte innerhalb des Containers.""", //da
 );
+
+/// Space in Row
 const TaskModel t_4_5_3_4 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -239,6 +262,7 @@ const TaskModel t_4_5_3_4 = TaskModel(
 Sorge für einen Abstand von 64 Einheiten zwischen den beiden Texten, ohne dafür einen `Container` zu verwenden.""", //da
 );
 
+/// Colorful Rectangle
 const TaskModel t_4_5_3_5 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -250,6 +274,8 @@ const TaskModel t_4_5_3_5 = TaskModel(
 Nutze Container der Größe 100 x 100.""", //da
   taskImagePath: "assets/images/tasks/4.5.4.3.png",
 );
+
+/// Shopping List
 const TaskModel t_4_5_3_6 = TaskModel(
   chapter: 4,
   subChapter: 5,
@@ -264,6 +290,7 @@ Implementiere dann eine `ListView`, die diese Produkte auflistet. Jedes Listenel
 **Hinweis: Verwende `shrinkWrap: true` in der `ListView`**.""", //da
 );
 
+/// Styling Impacts
 const TaskModel t_5_1_1_1 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -275,6 +302,7 @@ const TaskModel t_5_1_1_1 = TaskModel(
   taskImagePath: "assets/images/tasks/5.1.1.1.png",
 );
 
+/// Style a Llama
 const TaskModel t_5_1_1_2 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -289,6 +317,7 @@ Verwende diese Konstanten dann in deinem Code, um Code-Duplikate zu vermeiden.""
   taskImagePath: "assets/images/tasks/5.1.1.2.png",
 );
 
+/// Very own Material Button
 const TaskModel t_5_1_1_3 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -305,6 +334,7 @@ Bonus: Stelle sogar den `Ripple`-Effekt des Buttons bei Berührung nach.
 **Hinweis: Benutze die Widgets `Container`, `Text`, `GestureDetector`, `InkWell`, `BoxDecoration`, `TextStyle`, …**""", //da
 );
 
+/// Animated Text
 const TaskModel t_5_1_1_4 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -312,12 +342,10 @@ const TaskModel t_5_1_1_4 = TaskModel(
   taskNumber: 4,
   taskTitel: "Animated Text",
   taskText:
-      """Erstelle eine animierte Schriftgrößenänderung eines Text-Widgets mit dem Text `Hello, App Akademie!`
-Die `fontSize` soll sich dabei innerhalb von 3 Sekunden von 20 auf 30 ändern.
-
-**Hinweis: Nutze dazu das `AnimatedBuilder` Widget.**""", //da
+      "Erstelle eine animierte Schriftgrößenänderung eines Text-Widgets mit dem Text 'Hello, App Akademie!' Die `fontSize` soll sich dabei innerhalb von 3 Sekunden von 20 auf 30 ändern.\n\nTipp: Nutze dazu das `AnimatedBuilder` Widget.",
 );
 
+/// Google Fonts
 const TaskModel t_5_1_3_1 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -325,10 +353,10 @@ const TaskModel t_5_1_3_1 = TaskModel(
   taskNumber: 1,
   taskTitel: "Google Fonts",
   taskText:
-      """Wähle 4 beliebige Schriftarten aus `Google Fonts` aus und integriere sie.
-Ordne 4 `Text`-Widgets vertikal untereinander an und weise jedem `Text`-Widget eine der Schriftarten zu.""", //da
+      "Wähle 4 beliebige Schriftarten aus Google Fonts aus und integriere sie. Ordne 4 Text-Widgets vertikal untereinander an und weise jedem Text-Widget eine der Schriftarten zu.",
 );
 
+/// Fold / Unfold Text
 const TaskModel t_5_1_3_2 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -341,6 +369,7 @@ Der Text sollte länger als die Box sein und deshalb nach unten hin den überlau
 Integriere die Funktionalität, dass der Text sich bei einem Klick darauf ausklappt.""", //da
 );
 
+/// Box Decoration
 const TaskModel t_5_1_3_3 = TaskModel(
   chapter: 5,
   subChapter: 1,
@@ -351,6 +380,7 @@ const TaskModel t_5_1_3_3 = TaskModel(
       """Erstelle einen stilvollen `Container` mit einem Schatten, abgerundeten Ecken, Innenabstand, Hintergrundfarbe und einem Text-Inhalt.""", //da
 );
 
+/// Simple Image Asset
 const TaskModel t_5_3_1_1 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -362,6 +392,7 @@ const TaskModel t_5_3_1_1 = TaskModel(
 Erstelle im Anschluss ein Widget, um das Bild anzuzeigen.""", //da
 );
 
+/// Image from Network
 const TaskModel t_5_3_1_2 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -372,6 +403,7 @@ const TaskModel t_5_3_1_2 = TaskModel(
       """Suche ein beliebiges Bild aus dem Internet und zeige es hier mittels der URL an.""", //da
 );
 
+/// Cached Network Image
 const TaskModel t_5_3_1_3 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -383,6 +415,7 @@ const TaskModel t_5_3_1_3 = TaskModel(
 Teste anschließend, ob das Bild auch offline angezeigt wird.""", //da
 );
 
+/// Progress Indicator
 const TaskModel t_5_3_2_1 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -394,6 +427,7 @@ const TaskModel t_5_3_2_1 = TaskModel(
 Zeige während des Ladevorgangs einen `CircularProgressIndicator`. Dabei soll der Progress Indicator den aktuellen Fortschritt anzeigen.""", //da
 );
 
+/// Error Image
 const TaskModel t_5_3_2_2 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -405,6 +439,7 @@ const TaskModel t_5_3_2_2 = TaskModel(
 Zeige bei einem Fehler ein alternatives Bild, einen `Text` oder ein `Icon` an.""", //da
 );
 
+/// Shimmer Placeholder
 const TaskModel t_5_3_2_3 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -416,6 +451,7 @@ const TaskModel t_5_3_2_3 = TaskModel(
 Zeige während des Ladevorgangs einen `Shimmer Effect` an.""", //da
 );
 
+/// Thumbnail Image
 const TaskModel t_5_3_2_4 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -427,6 +463,7 @@ const TaskModel t_5_3_2_4 = TaskModel(
 Zeige während des Ladevorgangs ein `Thumbnail` an.""", //da
 );
 
+/// Camera & Gallery
 const TaskModel t_5_3_3_1 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -438,6 +475,7 @@ const TaskModel t_5_3_3_1 = TaskModel(
 Wähle entweder ein Bild aus der Galerie aus oder erstelle ein neues Bild mit der Kamera und zeige es anschließend unterhalb der `IconButtons` an.\nWenn erneut auf einen der IconButtons geklickt wird, soll das Bild aktualisiert werden.""", //da
 );
 
+/// Multiple Images
 const TaskModel t_5_3_3_2 = TaskModel(
   chapter: 5,
   subChapter: 3,
@@ -450,6 +488,7 @@ Wähle mehrere Bilder aus der Galerie aus und zeige sie anschließend untereinan
 Bonus: Wennn du auf eines der Bilder klickst, soll es aus der Liste entfernt werden.""", //da
 );
 
+/// Try Catch
 const TaskModel t_5_4_1_1 = TaskModel(
   chapter: 5,
   subChapter: 4,
@@ -466,6 +505,7 @@ Fange den Fehler jetzt mit einem `try-catch`-Block ab und gib den Fehler in eine
 **Hinweis: Du kannst einen Fehler z.B. mit `throw Exception('[dein Exception-Name]')` erzeugen.**""", //da
 );
 
+/// Index Exception
 const TaskModel t_5_4_2_1 = TaskModel(
   chapter: 5,
   subChapter: 4,
@@ -484,6 +524,7 @@ Alle anderen Fehler sollen nur in der Console geloggt werden.
 Egal welcher Fehler nun auftritt: Die farbliche Markierung soll im `ListView` entfernt werden.""", //da
 );
 
+/// Custom Exception
 const TaskModel t_5_4_2_2 = TaskModel(
   chapter: 5,
   subChapter: 4,
@@ -505,6 +546,7 @@ Wenn das Alter passt, gib das Alter in einer `Snackbar` aus!
 **Tipp: Erstelle eine eigene Exception-Klasse `AgeException`, die `Exception` implementiert.**""", //da
 );
 
+// Async Methods
 const t_5_5_1_1 = TaskModel(
   chapter: 5,
   subChapter: 5,
@@ -523,6 +565,7 @@ Teste den Button jetzt erneut und beobachte die Ausgabe in der Konsole.
 Was fällt dir auf? Warum ist das so?""", //da
 );
 
+/// Async Progress Bar
 const TaskModel t_5_5_2_1 = TaskModel(
   chapter: 5,
   subChapter: 5,
@@ -540,6 +583,7 @@ Bonus 3: Zeige den aktuellen Fortschritt innerhalb der Fortschrittsanzeige in Pr
 **Tipp: Du musst hier nicht auf das `Future` warten.**""", //da
 );
 
+/// Roll the Dice!
 const TaskModel t_5_5_2_2 = TaskModel(
   chapter: 5,
   subChapter: 5,
@@ -553,6 +597,8 @@ Wenn ein Fehler auftritt, soll auch dieser im selben `Text`-Widget angezeigt wer
 Sorge dafür, dass zufällig entschieden wird, ob ein Fehler auftritt oder nicht.
 Löse diese Aufgabe nur mit `.then` und `.catchError`.""",
 );
+
+/// Roll the Dice! (try-catch)
 const TaskModel t_5_5_2_3 = TaskModel(
   chapter: 5,
   subChapter: 5,
@@ -569,6 +615,8 @@ Wenn ein Fehler auftritt, soll auch dieser im selben `Text`-Widget angezeigt wer
 Sorge dafür dass zufällig entschieden wird, ob ein Fehler auftritt oder nicht.
 Löse diese Aufgabe mit einem `async-await` und einem `try-catch`-Block.""",
 );
+
+/// Roll the Dice! (FutureBuilder)
 const TaskModel t_5_5_2_4 = TaskModel(
   chapter: 5,
   subChapter: 5,
@@ -586,6 +634,7 @@ Sorge dafür dass zufällig entschieden wird, ob ein Fehler auftritt oder nicht.
 Löse diese Aufgabe mit einem `FutureBuilder`.""",
 );
 
+/// Random User API
 const TaskModel t_5_5_3_1 = TaskModel(
   chapter: 5,
   subChapter: 5,
