@@ -68,12 +68,11 @@ class _NavigationScreenState extends State<NavigationScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(child: Text(widget.scaffoldTitle)),
-            Flexible(
-              child: widget.showDarkModeSwitch
-                  ? DarkModeSwitch(
-                      settingsController: widget.settingsController)
-                  : const SizedBox.shrink(),
-            ),
+            widget.showDarkModeSwitch
+                ? Flexible(
+                    child: DarkModeSwitch(
+                        settingsController: widget.settingsController))
+                : const SizedBox.shrink(),
           ],
         ),
       ),
