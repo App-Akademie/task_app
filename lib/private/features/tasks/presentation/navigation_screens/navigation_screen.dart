@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/features/settings/settings_controller.dart';
 import 'package:task_app/private/features/tasks/application/solved_function_arg.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/progress.dart';
@@ -30,6 +31,8 @@ class NavigationScreen extends StatelessWidget {
   final String Function(Task) tileTextFunction;
   final Widget Function(Task) routeWidgetFunction;
   final bool showAppBarIcon;
+  final SettingsController settingsController;
+  final bool showDarkModeSwitch;
   const NavigationScreen({
     Key? key,
     required this.navigationScreenType,
@@ -40,6 +43,8 @@ class NavigationScreen extends StatelessWidget {
     required this.solvedFunction,
     required this.tileTextFunction,
     required this.routeWidgetFunction,
+    required this.settingsController,
+    this.showDarkModeSwitch = false,
     this.showAppBarIcon = false,
   }) : super(key: key);
   @override
@@ -49,7 +54,23 @@ class NavigationScreen extends StatelessWidget {
         leading: showAppBarIcon
             ? Image.asset('assets/images/icon_light_bg.jpg')
             : null,
-        title: Text(scaffoldTitle),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(scaffoldTitle),
+            showDarkModeSwitch
+                ? Switch(
+                    value: settingsController.themeMode == ThemeMode.dark ||
+                        (settingsController.themeMode == ThemeMode.system &&
+                            MediaQuery.of(context).platformBrightness ==
+                                Brightness.dark),
+                    onChanged: (v) {
+                      settingsController.updateThemeMode(
+                          v ? ThemeMode.dark : ThemeMode.light);
+                    })
+                : const SizedBox(),
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(

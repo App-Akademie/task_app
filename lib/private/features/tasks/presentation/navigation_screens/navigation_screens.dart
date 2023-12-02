@@ -1,3 +1,4 @@
+import 'package:task_app/private/features/settings/settings_controller.dart';
 import 'package:task_app/private/features/tasks/application/filter_tasks.dart';
 import 'package:task_app/private/features/tasks/application/solved_function_arg.dart';
 import 'package:task_app/private/features/tasks/application/solved_tasks.dart';
@@ -7,19 +8,25 @@ import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/task_screen.dart';
 import 'package:task_app/private/features/tasks/presentation/navigation_screens/navigation_screen.dart';
 
-final overviewScreen = NavigationScreen(
-  navigationScreenType: NavigationScreenType.chapters,
-  scaffoldTitle: "Übersicht",
-  progressTitle: "Gesamtfortschritt",
-  tasks: globalTaskList,
-  sortedStrippedTasksFunction: sortChapters,
-  solvedFunction: isChapterSolved,
-  tileTextFunction: (Task task) =>
-      "Kapitel ${task.chapter}: ${task.taskModel.chapterTitle}",
-  routeWidgetFunction: (Task task) => _chaptersScreen(task),
-  showAppBarIcon: true,
-);
-NavigationScreen _chaptersScreen(Task task) => NavigationScreen(
+NavigationScreen getOverviewScreen({required SettingsController controller}) =>
+    NavigationScreen(
+      navigationScreenType: NavigationScreenType.chapters,
+      scaffoldTitle: "Übersicht",
+      progressTitle: "Gesamtfortschritt",
+      tasks: globalTaskList,
+      sortedStrippedTasksFunction: sortChapters,
+      solvedFunction: isChapterSolved,
+      tileTextFunction: (Task task) =>
+          "Kapitel ${task.chapter}: ${task.taskModel.chapterTitle}",
+      routeWidgetFunction: (Task task) =>
+          _chaptersScreen(task: task, controller: controller),
+      showAppBarIcon: true,
+      settingsController: controller,
+      showDarkModeSwitch: true,
+    );
+NavigationScreen _chaptersScreen(
+        {required Task task, required SettingsController controller}) =>
+    NavigationScreen(
       navigationScreenType: NavigationScreenType.subChapters,
       scaffoldTitle: 'Kapitel ${task.chapter}: ${task.taskModel.chapterTitle}',
       progressTitle: "Kapitel Fortschritt",
@@ -28,9 +35,13 @@ NavigationScreen _chaptersScreen(Task task) => NavigationScreen(
       solvedFunction: isSubChapterSolved,
       tileTextFunction: (Task task) =>
           "Unterkapitel ${task.taskModel.fullSubChapterNumberString}: ${task.taskModel.subChapterTitle}",
-      routeWidgetFunction: (Task task) => _subChaptersScreen(task),
+      routeWidgetFunction: (Task task) =>
+          _subChaptersScreen(task: task, controller: controller),
+      settingsController: controller,
     );
-NavigationScreen _subChaptersScreen(Task task) => NavigationScreen(
+NavigationScreen _subChaptersScreen(
+        {required Task task, required SettingsController controller}) =>
+    NavigationScreen(
       navigationScreenType: NavigationScreenType.lessons,
       scaffoldTitle:
           'Unterkapitel ${task.taskModel.fullSubChapterNumberString}: ${task.taskModel.subChapterTitle}',
@@ -40,10 +51,14 @@ NavigationScreen _subChaptersScreen(Task task) => NavigationScreen(
       solvedFunction: isLessonSolved,
       tileTextFunction: (Task task) =>
           "Lektion ${task.taskModel.fullLectionNumberString}: ${task.taskModel.lessonTitle}",
-      routeWidgetFunction: (Task task) => _lessonsScreen(task),
+      routeWidgetFunction: (Task task) =>
+          _lessonsScreen(task: task, controller: controller),
+      settingsController: controller,
     );
 
-NavigationScreen _lessonsScreen(Task task) => NavigationScreen(
+NavigationScreen _lessonsScreen(
+        {required Task task, required SettingsController controller}) =>
+    NavigationScreen(
       navigationScreenType: NavigationScreenType.tasks,
       scaffoldTitle:
           'Lektion ${task.taskModel.fullLectionNumberString}: ${task.taskModel.lessonTitle}',
@@ -57,4 +72,5 @@ NavigationScreen _lessonsScreen(Task task) => NavigationScreen(
       routeWidgetFunction: (Task task) => TaskScreen(
         task: task,
       ),
+      settingsController: controller,
     );
