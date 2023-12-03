@@ -24,6 +24,9 @@ class SettingsController with ChangeNotifier {
   bool get systemDarkMode =>
       SchedulerBinding.instance.platformDispatcher.platformBrightness ==
       Brightness.dark;
+  bool get darkModeSet =>
+      themeMode == ThemeMode.dark ||
+      (themeMode == ThemeMode.system && systemDarkMode);
 
   /// Load the user's settings from the SettingsService. It may load from a
   /// local database or the internet. The controller only knows it can load the
