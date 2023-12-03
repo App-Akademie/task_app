@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:task_app/private/config/palette.dart';
 import 'package:task_app/private/features/text_parsing/models/text_pieces/code_text_piece.dart';
 import 'package:task_app/private/features/text_parsing/models/text_pieces/note_text_piece.dart';
 import 'package:task_app/private/features/text_parsing/models/text_pieces/plain_text_piece.dart';
@@ -56,7 +55,7 @@ TextStyle? getStyleFromTextPiece(BuildContext context, TextPiece piece) {
   if (piece is CodeTextPiece) {
     return Theme.of(context).textTheme.titleMedium!.copyWith(
           fontWeight: FontWeight.bold,
-          color: barcelonaOrange,
+          color: Theme.of(context).colorScheme.primary,
         );
   } else if (piece is NoteTextPiece) {
     return Theme.of(context).textTheme.titleMedium!.copyWith(

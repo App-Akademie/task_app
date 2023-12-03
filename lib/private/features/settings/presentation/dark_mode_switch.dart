@@ -37,10 +37,7 @@ class DarkModeSwitchState extends State<DarkModeSwitch> {
               if (controller == null) return;
               artboard.addController(controller!);
               switchInput = controller!.findInput("isDark");
-              switchInput?.change(widget.settingsController.themeMode ==
-                      ThemeMode.dark ||
-                  (widget.settingsController.themeMode == ThemeMode.system &&
-                      widget.settingsController.systemDarkMode));
+              switchInput?.change(widget.settingsController.darkModeSet);
             },
           )),
     );

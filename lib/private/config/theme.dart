@@ -17,12 +17,14 @@ ThemeData themeData(
 ColorScheme lightScheme = ColorScheme.fromSeed(
   seedColor: barcelonaOrange,
   primary: barcelonaOrange,
-  secondary: barcelonaOrange,
+  secondary: dreamlessBlack,
   brightness: Brightness.light,
+  tertiary: dreamlessBlack,
 );
 ColorScheme darkScheme = ColorScheme.fromSeed(
-  seedColor: barcelonaOrange,
+  seedColor: dreamlessBlack,
   primary: barcelonaOrange,
   secondary: dreamlessBlack,
   brightness: Brightness.dark,
+  tertiary: barcelonaOrange,
 );

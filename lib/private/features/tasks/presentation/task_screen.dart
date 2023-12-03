@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/app_sizes.dart';
-import 'package:task_app/private/config/palette.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/unsolved_task.dart';
 import 'package:task_app/private/features/text_parsing/presentation/task_text.dart';
@@ -14,7 +13,6 @@ class TaskScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: dreamlessBlack,
         toolbarHeight: 96,
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -23,7 +21,8 @@ class TaskScreen extends StatelessWidget {
               textAlign: TextAlign.start,
               "Kapitel ${task.chapter}: ${task.taskModel.lessonTitle}",
               style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  color: barcelonaOrange, fontWeight: FontWeight.bold),
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.tertiary),
             ),
             gapH4,
             Text(
@@ -63,13 +62,14 @@ class TaskScreen extends StatelessWidget {
     return Row(
       children: [
         Container(
-          color: dreamlessBlack,
+          color: Theme.of(context).colorScheme.onBackground,
           child: Padding(
             padding: const EdgeInsets.symmetric(
                 horizontal: Sizes.p16, vertical: Sizes.p4),
             child: Text(isSolutionTitle ? "Lösung" : "Aufgabe",
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                    color: Colors.white, fontWeight: FontWeight.bold)),
+                    color: Theme.of(context).colorScheme.background,
+                    fontWeight: FontWeight.bold)),
           ),
         ),
       ],
