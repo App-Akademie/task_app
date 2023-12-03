@@ -128,8 +128,8 @@ Die Funktion soll die PIN hacken und zurückgeben.
 Nutze die vorgegeben Funktion `_isPinCorrect()` um zu überprüfen, ob die PIN korrekt ist.
 Die Funktion `_isPinCorrect()` nimmt einen `String` entgegen und gibt einen `bool` zurück. Die Funktion `_isPinCorrect()` ist bereits fertig implementiert.
 
-**Hinweis 1: Hacke den PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du den richtigen PIN gefunden hast.**
-**Hinweis 2: Der PIN ist eine 4-stellige Zahl.**
+**Hinweis 1: Hacke die PIN mit einer Brute-Force-Attacke. Das heißt, probiere alle möglichen Kombinationen aus, bis du die richtigen PIN gefunden hast.**
+**Hinweis 2: Die PIN ist eine 4-stellige Zahl.**
 **Hinweis 3: Das UI ist bereits fertig implementiert. Du musst nur die Funktion `hackPin` implementieren.**
 """,
 );
@@ -342,7 +342,9 @@ const TaskModel t_5_1_1_4 = TaskModel(
   taskNumber: 4,
   taskTitel: "Animated Text",
   taskText:
-      "Erstelle eine animierte Schriftgrößenänderung eines Text-Widgets mit dem Text 'Hello, App Akademie!' Die `fontSize` soll sich dabei innerhalb von 3 Sekunden von 20 auf 30 ändern.\n\nTipp: Nutze dazu das `AnimatedBuilder` Widget.",
+      """Erstelle eine animierte Schriftgrößenänderung eines Text-Widgets mit dem Text `Hello, App Akademie!`
+Die `fontSize` soll sich dabei innerhalb von 3 Sekunden von 20 auf 30 ändern.
+**Hinweis: Nutze dazu das `AnimatedBuilder` Widget.**""",
 );
 
 /// Google Fonts
@@ -353,7 +355,8 @@ const TaskModel t_5_1_3_1 = TaskModel(
   taskNumber: 1,
   taskTitel: "Google Fonts",
   taskText:
-      "Wähle 4 beliebige Schriftarten aus Google Fonts aus und integriere sie. Ordne 4 Text-Widgets vertikal untereinander an und weise jedem Text-Widget eine der Schriftarten zu.",
+      """Wähle 4 beliebige Schriftarten aus `Google Fonts` aus und integriere sie.
+Ordne 4 `Text`-Widgets vertikal untereinander an und weise jedem `Text`-Widget eine der Schriftarten zu.""",
 );
 
 /// Fold / Unfold Text
