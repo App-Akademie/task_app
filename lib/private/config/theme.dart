@@ -9,6 +9,7 @@ ThemeData themeData(
   TextTheme customTextTheme =
       baseTextTheme.apply(fontFamily: GoogleFonts.figtree().fontFamily);
   return ThemeData.from(
+    useMaterial3: false,
     colorScheme: isDarkTheme ? darkScheme : lightScheme,
     textTheme: customTextTheme,
   );
