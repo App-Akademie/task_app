@@ -62,9 +62,12 @@ class _NavigationScreenState extends State<NavigationScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: widget.showAppBarIcon
-            ? Image.asset(widget.settingsController.darkModeSet
-                ? 'assets/images/icon_dark_bg.jpg'
-                : 'assets/images/icon_light_bg.jpg')
+            ? Padding(
+                padding: const EdgeInsets.all(Sizes.p16),
+                child: Image.asset(widget.settingsController.darkModeSet
+                    ? 'assets/images/logo_w.png'
+                    : 'assets/images/logo_b.png'),
+              )
             : null,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
