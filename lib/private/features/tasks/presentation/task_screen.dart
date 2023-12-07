@@ -38,7 +38,7 @@ class TaskScreen extends StatelessWidget {
           child: Center(
             child: Column(
               children: [
-                _taskSolutionTitle(context: context, isSolutionTitle: false),
+                const TaskTitle(text: "Aufgabe"),
                 gapH16,
                 TaskText(text: task.taskModel.taskText),
                 if (task.taskModel.taskImagePath != null) ...[
@@ -46,7 +46,7 @@ class TaskScreen extends StatelessWidget {
                   Image.asset(task.taskModel.taskImagePath!),
                 ],
                 gapH32,
-                _taskSolutionTitle(context: context, isSolutionTitle: true),
+                const TaskTitle(text: "Lösung"),
                 gapH16,
                 task.solution ?? const UnsolvedTask(),
               ],
@@ -56,20 +56,31 @@ class TaskScreen extends StatelessWidget {
       ),
     );
   }
+}
 
-  Row _taskSolutionTitle(
-      {required BuildContext context, required bool isSolutionTitle}) {
+class TaskTitle extends StatelessWidget {
+  const TaskTitle({super.key, required this.text});
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
     return Row(
       children: [
         Container(
           color: Theme.of(context).colorScheme.onBackground,
           child: Padding(
             padding: const EdgeInsets.symmetric(
-                horizontal: Sizes.p16, vertical: Sizes.p4),
-            child: Text(isSolutionTitle ? "Lösung" : "Aufgabe",
-                style: Theme.of(context).textTheme.titleLarge!.copyWith(
+              horizontal: Sizes.p16,
+              vertical: Sizes.p4,
+            ),
+            child: Text(
+              text,
+              style: Theme.of(context).textTheme.titleLarge!.copyWith(
                     color: Theme.of(context).colorScheme.background,
-                    fontWeight: FontWeight.bold)),
+                    fontWeight: FontWeight.bold,
+                  ),
+            ),
           ),
         ),
       ],
