@@ -18,6 +18,6 @@ void main() {
     expect(find.byType(SizedBox), findsOneWidget);
 
     final sizedBox = tester.firstWidget<SizedBox>(find.byType(SizedBox));
-    expect(sizedBox.height, 64);
+    expect(sizedBox.width, 64);
   });
 }
