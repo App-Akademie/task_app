@@ -6,7 +6,6 @@ import 'package:task_app/private/features/text_parsing/presentation/task_text.da
 
 class TaskScreen extends StatelessWidget {
   final Task task;
-  static const routeName = '/TaskScreen';
 
   const TaskScreen({Key? key, required this.task}) : super(key: key);
   @override
