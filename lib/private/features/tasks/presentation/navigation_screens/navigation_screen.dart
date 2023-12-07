@@ -8,8 +8,6 @@ import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/progress.dart';
 
 class NavigationScreen extends StatefulWidget {
-  static const routeName = '/NavigationScreen';
-
   final NavigationScreenType navigationScreenType;
   final String scaffoldTitle;
   final String progressTitle;
