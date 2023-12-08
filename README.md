@@ -43,4 +43,3 @@ Press the "Sync fork" button on GitHub.
 1. `git remote add upstream https://github.com/DavidAppAkademie/task_app`
 2. `git fetch upstream`
 3. `git merge upstream/main --no-commit`
-4. Sync changes
