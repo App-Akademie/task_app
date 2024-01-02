@@ -298,7 +298,9 @@ const TaskModel t_5_1_1_1 = TaskModel(
   taskNumber: 1,
   taskTitel: "Styling Impacts",
   taskText:
-      """Rekonstruiere den Screen aus dem `Arbeitsblatt 5.1.1 (Aufgabe 1)` und integriere die von dir identifizierten Einflüsse auf das Aussehen einer App.""", //da
+      """Rekonstruiere den Screen aus dem `Arbeitsblatt 5.1.1 (Aufgabe 1)` und integriere die von dir identifizierten Einflüsse auf das Aussehen einer App.
+      
+      **Hinweis: Du brauchst kein Scaffold-Widget, da die Task App selbst bereits ein Scaffold mit AppBar bereitstellt.**""", //da
   taskImagePath: "assets/images/tasks/5.1.1.1.png",
 );
 
