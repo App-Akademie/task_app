@@ -1,5 +1,7 @@
 import 'package:task_app/private/features/tasks/data/tasks.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
+// ignore: unused_import
+import 'package:task_app/solutions/solutions.dart';
 
 const List<Task> chapter3TaskList = [
   Task(
