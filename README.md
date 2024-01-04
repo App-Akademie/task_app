@@ -2,7 +2,7 @@
 
 ## Setup
 
-[Video-Anleitung](https://www.youtube.com/watch?v=VHsAfd0oumM)
+[Video-Tutorial](https://www.youtube.com/watch?v=VHsAfd0oumM)
 
 ⚠️ Please ***fork*** the app in GitHub before cloning it to your computer.
 
