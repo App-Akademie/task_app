@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_app/private/config/assets.dart';
 
 class UnsolvedTask extends StatelessWidget {
   const UnsolvedTask({Key? key}) : super(key: key);
@@ -9,7 +10,7 @@ class UnsolvedTask extends StatelessWidget {
       children: [
         Text("Noch kein Lösung vorhanden 😞",
             style: Theme.of(context).textTheme.titleMedium),
-        Image.asset('assets/images/polar_empty.png'),
+        Image.asset(Assets.polarBear),
       ],
     ));
   }

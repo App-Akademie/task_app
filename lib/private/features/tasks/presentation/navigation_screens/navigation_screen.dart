@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/config/assets.dart';
 import 'package:task_app/private/features/settings/data/settings_controller.dart';
 import 'package:task_app/private/features/settings/presentation/dark_mode_switch.dart';
 import 'package:task_app/private/features/tasks/application/solved_function_arg.dart';
@@ -63,8 +64,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
             ? Padding(
                 padding: const EdgeInsets.all(Sizes.p16),
                 child: Image.asset(widget.settingsController.darkModeSet
-                    ? 'assets/images/logo_w.png'
-                    : 'assets/images/logo_b.png'),
+                    ? Assets.logoBright
+                    : Assets.logoDark),
               )
             : null,
         title: Row(

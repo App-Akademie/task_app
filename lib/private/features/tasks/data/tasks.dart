@@ -1,3 +1,4 @@
+import 'package:task_app/private/config/assets.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/models/task_model.dart';
 import 'package:task_app/tasks/task_list.dart';
@@ -272,7 +273,7 @@ const TaskModel t_4_5_3_5 = TaskModel(
   taskText:
       """Verwende `Column`, `Row` und `Container` Widgets, um das im Bild dargestellte Ergebnis nachzubauen.
 Nutze Container der Größe 100 x 100.""", //da
-  taskImagePath: "assets/images/tasks/4.5.4.3.png",
+  taskImagePath: Assets.taskAsset4543,
 );
 
 /// Shopping List
@@ -301,7 +302,7 @@ const TaskModel t_5_1_1_1 = TaskModel(
       """Rekonstruiere den Screen aus dem `Arbeitsblatt 5.1.1 (Aufgabe 1)` und integriere die von dir identifizierten Einflüsse auf das Aussehen einer App.
       
       **Hinweis: Du brauchst kein Scaffold-Widget, da die Task App selbst bereits ein Scaffold mit AppBar bereitstellt.**""", //da
-  taskImagePath: "assets/images/tasks/5.1.1.1.png",
+  taskImagePath: Assets.taskAsset5111,
 );
 
 /// Style a Llama
@@ -316,7 +317,7 @@ const TaskModel t_5_1_1_2 = TaskModel(
 Nutze dazu ein beliebiges Bild eines Lamas, sowie beliebige Daten für den Steckbrief.
 Erstelle eine separate `styles`-Datei, in der du Konstanten für die Textstile und Abstände definierst.
 Verwende diese Konstanten dann in deinem Code, um Code-Duplikate zu vermeiden.""", //da
-  taskImagePath: "assets/images/tasks/5.1.1.2.png",
+  taskImagePath: Assets.taskAsset5112,
 );
 
 /// Very own Material Button

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
+import 'package:task_app/private/config/assets.dart';
 import 'package:task_app/private/features/settings/data/settings_controller.dart';
 
 class DarkModeSwitch extends StatefulWidget {
@@ -27,7 +28,7 @@ class DarkModeSwitchState extends State<DarkModeSwitch> {
           height: 60,
           width: 100,
           child: RiveAnimation.asset(
-            'assets/animations/darklight-switch.riv',
+            Assets.darkLightSwitch,
             stateMachines: const ["Switch Theme"],
             onInit: (artboard) {
               controller = StateMachineController.fromArtboard(
