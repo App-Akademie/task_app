@@ -1,17 +1,58 @@
-import 'package:flutter/material.dart';
-import 'package:task_app/private/features/tasks/presentation/app.dart';
+import 'package:flutter/material.dart'
+    show
+        AppBar,
+        BuildContext,
+        Center,
+        Column,
+        ElevatedButton,
+        MainAxisAlignment,
+        MaterialApp,
+        Scaffold,
+        StatelessWidget,
+        Text,
+        TextStyle,
+        Widget;
 
-import 'private/features/settings/data/settings_controller.dart';
-import 'private/features/settings/data/settings_service.dart';
+runApp(Function() TaskApp) async {}
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  // Set up the SettingsController, which will glue user settings to multiple
-  // Flutter Widgets.
-  final settingsController = SettingsController(SettingsService());
+class TaskApp extends StatelessWidget {
+  const TaskApp({super.key});
 
-  // Load the user's preferred theme while the splash screen is displayed.
-  // This prevents a sudden theme change when the app is first displayed.
-  await settingsController.loadSettings();
-  runApp(App(settingsController: settingsController));
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: TaskHomePage(),
+    );
+  }
+}
+
+class TaskHomePage extends StatelessWidget {
+  const TaskHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Task App'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Text(
+              'Willkommen zur SchulungsApp!',
+              style: TextStyle(fontSize: 24),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Hier sollte die Navigation zur Schulungsseite implementiert werden.
+                // Beispiel: Navigator.push(context, MaterialPageRoute(builder: (context) => TrainingPage()));
+              },
+              child: const Text('Zur Schulungsseite navigieren'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }

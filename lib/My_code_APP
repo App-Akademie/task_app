@@ -1,0 +1,131 @@
+class WillkommenSchulungsApp {
+  // Attribute
+  String willkommen;
+  String schulungsApp;
+
+  // Konstruktor
+  WillkommenSchulungsApp(this.willkommen, this.schulungsApp);
+
+  // Methode
+  void ausgabe() {
+    print('$willkommen $schulungsApp');
+  }
+}
+
+class Person {
+  String firstname;
+  String lastname;
+  int password;
+
+  Person(this.firstname, this.lastname, this.password);
+}
+
+class MyApplogin {
+  List<Person> users = [];
+
+  // Anmeldung
+  void anmeldung(String firstName, String lastName, int password) {
+    var newPerson = Person(firstName, lastName, password);
+    users.add(newPerson);
+  }
+
+  // Überprüfung der Anmeldung
+  bool login(String firstName, String enteredLastName, int enteredPassword) {
+    for (var user in users) {
+      if (user.firstname == firstName &&
+          user.lastname == enteredLastName &&
+          user.password == enteredPassword) {
+        print('Anmeldung erfolgreich für ${user.firstname} ${user.lastname}');
+        return true;
+      }
+    }
+    print('Anmeldung fehlgeschlagen');
+    return false;
+  }
+
+  void navigateToTrainingPage() {
+    // Hier sollte die Navigation zur Schulungsseite implementiert werden.
+    // Beispiel: Navigator.push(context, MaterialPageRoute(builder: (context) => TrainingPage()));
+  }
+}
+
+bool checkIfUserNameInDatabase() {
+  // Hier wird überprüft, ob der Benutzername in der Datenbank vorhanden ist.
+  // Rückgabe: true, wenn vorhanden, andernfalls false.
+  return true;
+}
+
+String getPasswordForUserName(String userName) {
+  // Hier wird das gespeicherte Passwort für den Benutzernamen abgerufen.
+  // Rückgabe: Das gespeicherte Passwort oder null, wenn der Benutzername nicht vorhanden ist.
+  return "gespeichertesPasswort";
+}
+
+void userLogin(String userName, String userPassword) {
+  bool isUserNameInDatabase = checkIfUserNameInDatabase();
+
+  if (isUserNameInDatabase) {
+    String savedPassword = getPasswordForUserName(userName);
+
+    if (userPassword == savedPassword) {
+      print("Erfolgreich eingeloggt!");
+      // Nach erfolgreichem Login zur Schulungsseite wechseln
+      MyApplogin().navigateToTrainingPage();
+    } else {
+      print("Leider stimmt das Passwort nicht überein!");
+    }
+  } else {
+    print("Nutzer existiert nicht!");
+  }
+}
+
+// Modul und Modulseiten
+class Page {
+  int numberOfPage;
+  String instructionText;
+
+  Page(this.numberOfPage, this.instructionText);
+}
+
+Page trainingPage = Page(19081986, "Start der Schulungs App");
+Page page19081986 = Page(19081986,
+    "Login und Sprach aus wahl. Deutsch, Englisch, Türkisch, Kroatisch, Albanisch, Arabisch,Russisch, Serbisch");
+Page page1 = Page(1, "Rechtsvorschriften zur Unterichtung und unterweisung");
+Page page2 = Page(2, "Schulung App alle 6 Module");
+Page page3 = Page(3, "Modul1 : Flurförderfahrzeuge Unterweisung");
+Page page4 = Page(4, "Pictures");
+Page page5 = Page(5, "Defination DIN Norm ISO 5053");
+Page page6 = Page(6, "Betriebsanweisung beachten");
+
+List<Page> pages = [page19081986, page1, page2, page3, page4, page5, page6];
+
+String picturePath = "pictures${page1.numberOfPage}.jpeg";
+
+void main() {
+  // Beispielverwendungen der Klassen und Funktionen
+
+  // WillkommenSchulungsApp verwenden
+  var willkommenApp = WillkommenSchulungsApp('Willkommen', 'SchulungsApp');
+  willkommenApp.ausgabe();
+
+  // Person erstellen und zur Benutzerliste hinzufügen
+  var myAppLogin = MyApplogin();
+  myAppLogin.anmeldung('Vorname.Darko', 'Nachname.Popovic', 19081986);
+
+  // Beispielanmeldung und Überprüfung
+  myAppLogin.login('Vorname.Darko', 'Nachname.Popovic', 19081986);
+
+  // TrainingPage verwenden
+  print(trainingPage.numberOfPage); // Ausgabe: 0
+  print(trainingPage.instructionText); // Ausgabe: ...
+
+  // Iteration durch die Seitenliste
+  for (var page in pages) {
+    print('Page ${page.numberOfPage}: ${page.instructionText}');
+  }
+
+  // Bildpfad
+  print(picturePath); // Ausgabe: pictures1.jpeg
+}
+
+
