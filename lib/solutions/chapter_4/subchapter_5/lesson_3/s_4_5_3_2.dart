@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-import 'package:task_app/solutions/chapter_4/subchapter_5/lesson_3/s_4_5_3_1.dart';
 
 class S4532 extends StatelessWidget {
   const S4532({Key? key}) : super(key: key);
