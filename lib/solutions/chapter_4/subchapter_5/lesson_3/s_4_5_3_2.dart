@@ -7,16 +7,14 @@ class S4532 extends StatelessWidget {
     return const Column(
       children: [
         Text("App Akademie"),
-        Text(
-          "App Akademie",
-          style: TextStyle(
-              fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blue),
-        ),
+        Text("App Akademie",
+            style: TextStyle(
+                fontSize: 16, fontWeight: FontWeight.bold, color: Colors.blue)),
         Text(
           "App Akademie",
           style: TextStyle(
               fontSize: 10, fontStyle: FontStyle.italic, color: Colors.green),
-        )
+        ),
       ],
     );
   }

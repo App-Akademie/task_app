@@ -7,18 +7,20 @@ class S4531 extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 100,
           height: 100,
-          decoration: const BoxDecoration(color: Colors.blueGrey),
+          width: 100,
+          color: Colors.blueGrey,
         ),
         Container(
-            width: 100,
-            height: 100,
-            decoration: const BoxDecoration(color: Colors.blue)),
+          height: 100,
+          width: 100,
+          color: Colors.blue,
+        ),
         Container(
-            width: 100,
-            height: 100,
-            decoration: const BoxDecoration(color: Colors.cyan))
+          height: 100,
+          width: 100,
+          color: Colors.cyan,
+        ),
       ],
     );
   }
