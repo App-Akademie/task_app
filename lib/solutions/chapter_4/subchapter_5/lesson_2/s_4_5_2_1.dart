@@ -1,9 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class S4521 extends StatelessWidget {
   const S4521({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    throw UnimplementedError();
+ return const HelloWorldStateless();
+  }
+}
+
+
+class HelloWorldStateless extends StatelessWidget{
+  const HelloWorldStateless({super.key});
+  
+  @override
+  Widget build(BuildContext context) {
+return const Center(child: Text ("Hello World"),
+);
   }
 }
