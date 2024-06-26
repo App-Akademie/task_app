@@ -60,7 +60,7 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_3_1,
-    //solution: S4531(),
+  solution: S4531(),
   ),
   Task(
     taskModel: t_4_5_3_2,
