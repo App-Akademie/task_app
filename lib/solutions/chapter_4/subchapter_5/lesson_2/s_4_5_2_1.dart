@@ -17,9 +17,9 @@ class HelloWorldCenter extends StatelessWidget {
       child: Text(
         'Hello World',
         style: TextStyle(
-        fontSize: 30,
-        color: Color.fromARGB(255, 255, 2, 2),
-        fontWeight: FontWeight.bold),
+          fontSize: 30,
+          color: Color.fromARGB(255, 255, 2, 2),
+          fontWeight: FontWeight.bold),
       ),
     );
   }
