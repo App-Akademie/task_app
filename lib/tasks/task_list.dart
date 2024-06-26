@@ -48,15 +48,15 @@ const List<Task> chapter4TaskList = [
   ),
   Task(
     taskModel: t_4_5_2_2,
-    //solution: S4522(),
+    solution: S4522(),
   ),
   Task(
     taskModel: t_4_5_2_3,
-    // solution: S4523(),
+     solution: S4523(),
   ),
   Task(
     taskModel: t_4_5_2_4,
-    // solution: S4524(),
+     solution: S4524(),
   ),
   Task(
     taskModel: t_4_5_3_1,
