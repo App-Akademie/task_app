@@ -33,7 +33,7 @@ class FormattedTime {
 }
 
 class S3383 extends StatefulWidget {
-  const S3383({Key? key}) : super(key: key);
+  const S3383({super.key});
 
   @override
   State<S3383> createState() => _S3383State();

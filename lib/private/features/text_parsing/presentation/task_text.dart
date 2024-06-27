@@ -3,7 +3,7 @@ import 'package:task_app/private/features/text_parsing/application/task_text_par
 
 class TaskText extends StatefulWidget {
   final String text;
-  const TaskText({Key? key, required this.text}) : super(key: key);
+  const TaskText({super.key, required this.text});
 
   @override
   State<TaskText> createState() => _TaskTextState();

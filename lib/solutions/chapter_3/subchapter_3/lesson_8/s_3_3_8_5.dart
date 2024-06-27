@@ -6,7 +6,7 @@ bool isPalindrome(String input) {
 }
 
 class S3385 extends StatefulWidget {
-  const S3385({Key? key}) : super(key: key);
+  const S3385({super.key});
 
   @override
   State<S3385> createState() => _S3385State();

@@ -6,7 +6,7 @@ int multiplyAdvanced(int a, int b) {
 }
 
 class S3388 extends StatefulWidget {
-  const S3388({Key? key}) : super(key: key);
+  const S3388({super.key});
 
   @override
   State<S3388> createState() => _S3388State();

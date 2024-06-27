@@ -9,10 +9,10 @@ class Progress extends StatelessWidget {
   final List<Task> tasks;
   final String progressTitle;
   const Progress({
-    Key? key,
+    super.key,
     required this.tasks,
     required this.progressTitle,
-  }) : super(key: key);
+  });
   @override
   Widget build(BuildContext context) {
     final solvedTasksCount = numberOfSolvedTasks(tasks);

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task_app/private/config/assets.dart';
 
 class UnsolvedTask extends StatelessWidget {
-  const UnsolvedTask({Key? key}) : super(key: key);
+  const UnsolvedTask({super.key});
   @override
   Widget build(BuildContext context) {
     return Center(

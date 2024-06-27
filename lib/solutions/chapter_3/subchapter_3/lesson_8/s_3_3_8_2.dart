@@ -6,7 +6,7 @@ bool isPrime(int input) {
 }
 
 class S3382 extends StatefulWidget {
-  const S3382({Key? key}) : super(key: key);
+  const S3382({super.key});
 
   @override
   State<S3382> createState() => _S3382State();

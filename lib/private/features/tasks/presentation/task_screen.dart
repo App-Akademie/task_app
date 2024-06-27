@@ -7,7 +7,7 @@ import 'package:task_app/private/features/text_parsing/presentation/task_text.da
 class TaskScreen extends StatelessWidget {
   final Task task;
 
-  const TaskScreen({Key? key, required this.task}) : super(key: key);
+  const TaskScreen({super.key, required this.task});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

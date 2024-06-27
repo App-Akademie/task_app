@@ -35,7 +35,7 @@ class NavigationScreen extends StatefulWidget {
   final SettingsController settingsController;
   final bool showDarkModeSwitch;
   const NavigationScreen({
-    Key? key,
+    super.key,
     required this.navigationScreenType,
     required this.scaffoldTitle,
     required this.progressTitle,
@@ -47,7 +47,7 @@ class NavigationScreen extends StatefulWidget {
     required this.settingsController,
     this.showDarkModeSwitch = false,
     this.showAppBarIcon = false,
-  }) : super(key: key);
+  });
 
   @override
   State<NavigationScreen> createState() => _NavigationScreenState();
