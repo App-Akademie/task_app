@@ -23,7 +23,8 @@ crossAxisAlignment: CrossAxisAlignment.center,
   children: [
 Align(
       alignment: Alignment.center,
-      child: Text("App\n Akademie", textAlign: TextAlign.center,
+      child: Text("App\n Akademie", 
+      textAlign: TextAlign.center,
       ),
     )
   ],
