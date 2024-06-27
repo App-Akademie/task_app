@@ -4,12 +4,12 @@ class S4531 extends StatelessWidget {
   const S4531({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return const myColumn();
+    return const MyColumn();
   }
 }
 
-class myColumn extends StatelessWidget {
-  const myColumn({super.key});
+class MyColumn extends StatelessWidget {
+  const MyColumn({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,16 +19,15 @@ class myColumn extends StatelessWidget {
           width: 100,
           height: 100,
           color: Colors.blueGrey,
-          child: Center(child: Text('Container 1')),
+          child: Center(child: Text('Container 11')),
         ),
-        SizedBox(height: 10), // Optional: Adds spacing between containers
+        // Optional: Adds spacing between containers
         Container(
           width: 100,
           height: 100,
           color: Colors.blue,
           child: Center(child: Text('Container 2')),
         ),
-        SizedBox(height: 10), // Optional: Adds spacing between containers
         Container(
           width: 100,
           height: 100,

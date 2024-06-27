@@ -13,11 +13,10 @@ class myColumnText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         Text(
-          'App Akademie',
-          style: TextStyle(fontSize: 20, color: Colors.red),
+          "App Akademie",
         ),
         Text(
           'App Akademie',
