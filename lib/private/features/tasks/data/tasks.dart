@@ -158,7 +158,7 @@ const TaskModel t_4_5_1_1 = TaskModel(
     taskNumber: 1,
     taskTitel: "Hello World",
     taskText:
-        """Implementiere ein Stateless Widget mit einem `Hello World`-Text-Widget.""");
+        """Implementiere ein neues StatelessWidget "HelloWorld", das ein `Hello World`-Text-Widget enthält und in dem bereits vorhandenen StatelessWidget verwendet wird.""");
 
 /// Hello World (zentriert)
 const TaskModel t_4_5_2_1 = TaskModel(
@@ -168,7 +168,7 @@ const TaskModel t_4_5_2_1 = TaskModel(
     taskNumber: 1,
     taskTitel: "Hello World (zentriert)",
     taskText:
-        """Erstelle ein Stateless Widget, das ein `Center`-Widget mit einem zentrierten `Hello World`-Text-Widget anzeigt.""");
+        """Erstelle ein neues StatelessWidget, das ein `Center`-Widget mit einem zentrierten `Hello World`-Text-Widget anzeigt und in dem bereits vorhandenen StatelessWidget verwendet wird.""");
 
 /// Hello Name!
 const TaskModel t_4_5_2_2 = TaskModel(
@@ -178,7 +178,7 @@ const TaskModel t_4_5_2_2 = TaskModel(
   taskNumber: 2,
   taskTitel: "Hello Name!",
   taskText:
-      """Erstelle ein Stateless Widget mit dem Namen `MyStatelessWidget`, das einen `Text` und einen `ElevatedButton` enthält.
+      """Erstelle ein StatelessWidget mit dem Namen `MyStatelessWidget`, das einen `Text` und einen `ElevatedButton` enthält.
 Positioniere den Text oberhalb des Buttons. Der Button soll die Beschriftung `Klick mich` haben, und der Text des Text-Widgets soll `Hello [Dein Name]` lauten (ersetze [Dein Name] mit deinem eigenen Namen).
 
 **Hinweis: Der Button muss erstmal noch nicht auf einen Klick reagieren.**""",
@@ -192,7 +192,7 @@ const TaskModel t_4_5_2_3 = TaskModel(
   taskNumber: 3,
   taskTitel: "Show Name Button",
   taskText:
-      """Erstelle ein Stateful Widget mit dem Namen `MyNameWidget`. Der Zustand (State) des Widgets soll anfangs ein leerer String sein.
+      """Erstelle ein StatefulWidget mit dem Namen `MyNameWidget`. Der Zustand (State) des Widgets soll anfangs ein leerer String sein.
 Integriere ein `Text`-Widget und einen `ElevatedButton` in das UI. Das `Text`-Widget zeigt den aktuellen State an (zu Beginn also einen leeren String).
 Der Button soll mit `Name anzeigen` beschriftet sein. Bei einem Klick auf den Button soll der State auf deinen Namen gesetzt werden, und der neue State soll im `Text`-Widget dargestellt werden.""",
 );
@@ -204,7 +204,7 @@ const TaskModel t_4_5_2_4 = TaskModel(
   lesson: 2,
   taskNumber: 4,
   taskTitel: "Show / hide Name Button",
-  taskText: """Erstelle ein Stateful Widget mit dem Namen `ShowHideNameWidget`. 
+  taskText: """Erstelle ein StatefulWidget mit dem Namen `ShowHideNameWidget`. 
 Der Zustand (State) des Widgets soll aus 2 Strings bestehen. Ein leerer `String` für den Namen sein und ein `String` für den Text des Buttons.
 Integriere ein `Text`-Widget und einen `ElevatedButton` in das UI. Das `Text`-Widget zeigt den aktuellen State an (zu Beginn also einen leeren String).
 Der Button soll am Anfang mit `Name anzeigen` beschriftet sein. Bei einem Klick auf den Button soll der State auf deinen Namen gesetzt werden, und der neue State soll im Text-Widget dargestellt werden.
