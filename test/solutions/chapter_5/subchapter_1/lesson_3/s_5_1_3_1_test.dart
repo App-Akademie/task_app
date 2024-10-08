@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_1/lesson_3/s_5_1_3_1.dart';
+import 'package:task_app/solutions/chapter_4/subchapter_6/lesson_5/s_4_6_5_1.dart';
 
 void main() {
   testWidgets('Prüft, ob 4 verschiedene Google-Schriftarten verwendet wurden',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
-        body: S5131(),
+        body: S4651(),
       ),
     ));
 

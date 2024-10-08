@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_3/lesson_3/s_5_3_3_2.dart';
+import 'package:task_app/solutions/chapter_4/subchapter_4/lesson_2/s_4_4_2_8.dart';
 
 void main() {
   testWidgets('MultiImagePickerWidget zeigt einen IconButton-Widget',
@@ -9,7 +9,7 @@ void main() {
     await tester.pumpWidget(
       const MaterialApp(
         home: Scaffold(
-          body: S5332(),
+          body: S4428(),
         ),
       ),
     );

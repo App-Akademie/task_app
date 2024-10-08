@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_5/lesson_1/s_5_5_1_1.dart';
+import 'package:task_app/solutions/chapter_5/subchapter_2/lesson_4/s_5_2_4_1.dart';
 
 void main() {
   testWidgets(
@@ -8,7 +8,7 @@ void main() {
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
-        body: S5511(),
+        body: S5241(),
       ),
     ));
 

@@ -8,7 +8,7 @@ void main() {
       (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
-        home: S4522(),
+        home: S4311(),
       ),
     );
 

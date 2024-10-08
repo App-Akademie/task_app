@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_5/lesson_2/s_5_5_2_3.dart';
+import 'package:task_app/solutions/chapter_5/subchapter_2/lesson_4/s_5_2_4_7.dart';
 
 void main() {
   testWidgets('Test Würfel-Funktionalität', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: S5523()));
+    await tester.pumpWidget(const MaterialApp(home: S5247()));
     expect(find.byType(ElevatedButton), findsOneWidget);
     await tester.tap(find.byType(ElevatedButton));
     await tester.pump();

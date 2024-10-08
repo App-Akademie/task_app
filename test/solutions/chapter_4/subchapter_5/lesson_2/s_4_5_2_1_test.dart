@@ -7,7 +7,7 @@ void main() {
       (WidgetTester tester) async {
     await tester.pumpWidget(
       const MaterialApp(
-        home: S4521(), // Ersetzen Sie dies durch Ihr tatsächliches Widget
+        home: S4241(), // Ersetzen Sie dies durch Ihr tatsächliches Widget
       ),
     );
 

@@ -8,7 +8,7 @@ void main() {
     // App starten
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
-        body: S4536(),
+        body: S4411(),
       ),
     ));
     expect(find.byType(ListView), findsOneWidget);

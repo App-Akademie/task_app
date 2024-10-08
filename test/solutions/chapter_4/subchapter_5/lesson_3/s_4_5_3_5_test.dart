@@ -6,7 +6,7 @@ void main() {
   testWidgets('Validiert die Struktur und die Farben der Container',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
-      home: S4535(),
+      home: S4333(),
     ));
 
     expect(find.byType(Column), findsOneWidget);

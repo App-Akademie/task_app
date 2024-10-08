@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_4/lesson_2/s_5_4_2_2.dart';
+import 'package:task_app/solutions/chapter_5/subchapter_2/lesson_4/s_5_2_4_5.dart';
 
 void main() {
   group('Age Validation Tests', () {
@@ -8,7 +8,7 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(const MaterialApp(
         home: Scaffold(
-          body: S5422(),
+          body: S5245(),
         ),
       ));
 
@@ -27,7 +27,7 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(const MaterialApp(
         home: Scaffold(
-          body: S5422(),
+          body: S5245(),
         ),
       ));
 
@@ -45,7 +45,7 @@ void main() {
         (WidgetTester tester) async {
       await tester.pumpWidget(const MaterialApp(
         home: Scaffold(
-          body: S5422(),
+          body: S5245(),
         ),
       ));
 

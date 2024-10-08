@@ -4,7 +4,7 @@ import 'package:task_app/solutions/solutions.dart';
 
 void main() {
   testWidgets('Test Würfel-Funktionalität', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: S5524()));
+    await tester.pumpWidget(const MaterialApp(home: S5231()));
     expect(find.byType(ElevatedButton), findsOneWidget);
     await tester.tap(find.byType(ElevatedButton));
     await tester.pump();

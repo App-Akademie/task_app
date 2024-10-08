@@ -7,7 +7,7 @@ void main() {
       'Validiert den blauen Container mit der Column und zwei Text-Widgets',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
-      home: S4533(),
+      home: S4331(),
     ));
 
     expect(find.byType(Container), findsOneWidget);

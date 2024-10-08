@@ -5,7 +5,7 @@ import 'package:task_app/solutions/solutions.dart';
 void main() {
   testWidgets('ShowHideNameWidget Test', (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
-      home: S4524(),
+      home: S4342(),
     ));
 
     final nameTextFinder = find.descendant(

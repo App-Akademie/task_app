@@ -7,7 +7,7 @@ void main() {
       'Validiert die Row mit zwei Text-Widgets und einem SizedBox dazwischen',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
-      home: S4534(),
+      home: S4332(),
     ));
 
     expect(find.byType(Row), findsOneWidget);

@@ -1,5 +1,18 @@
 const List<({int chapter, int lesson, int subChapter, String title})>
     curriculumTitles = [
+(chapter:3, subChapter: 0, lesson: 0, title: "Grundlagen der Programmierung"),
+(chapter:3, subChapter: 5, lesson: 0, title: "Komplexe Anweisungen"),
+(chapter:4, subChapter: 0, lesson: 0, title: "Flutter I"),
+(chapter:4, subChapter: 2, lesson: 0, title: "Flutter"),
+(chapter:4, subChapter: 3, lesson: 0, title: "Widgets"),
+(chapter:4, subChapter: 4, lesson: 0, title: "Advanced Widgets"),
+(chapter:4, subChapter: 6, lesson: 0, title: "Styling"),
+
+(chapter:5, subChapter: 0, lesson: 0, title: "Flutter II"),
+(chapter:5, subChapter: 1, lesson: 0, title: "Interaktivität"),
+(chapter:5, subChapter: 2, lesson: 0, title: "Asynchronität"),
+(chapter:5, subChapter: 4, lesson: 0, title: "Serveranfragen"),
+
 (chapter:3, subChapter: 1, lesson: 1, title: "VSCode Installation"),
 (chapter:3, subChapter: 1, lesson: 2, title: "GitHub Basics"),
 (chapter:3, subChapter: 2, lesson: 1, title: "Algorithmen"),
@@ -17,6 +30,7 @@ const List<({int chapter, int lesson, int subChapter, String title})>
 (chapter:3, subChapter: 4, lesson: 4, title: "Switch Anweisung (Dart)"),
 (chapter:3, subChapter: 4, lesson: 5, title: "Schleifen I (Dart)"),
 (chapter:3, subChapter: 4, lesson: 6, title: "Erstes Konsolenprogramm (Dart)"),
+
 (chapter:3, subChapter: 5, lesson: 1, title: "Schleifen II (Dart)"),
 (chapter:3, subChapter: 5, lesson: 2, title: "Funktionen I (Dart)"),
 (chapter:3, subChapter: 5, lesson: 3, title: "Funktionen II (Dart)"),

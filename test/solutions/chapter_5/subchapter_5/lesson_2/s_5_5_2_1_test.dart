@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_5/subchapter_5/lesson_2/s_5_5_2_1.dart';
+import 'package:task_app/solutions/chapter_5/subchapter_2/lesson_4/s_5_2_4_2.dart';
 
 void main() {
   testWidgets('Progress bar should fill up slowly after button click',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
       home: Scaffold(
-        body: S5521(),
+        body: S5242(),
       ),
     ));
 

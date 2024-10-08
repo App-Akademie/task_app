@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:task_app/solutions/chapter_4/subchapter_5/lesson_3/s_4_5_3_2.dart';
+import 'package:task_app/solutions/chapter_4/subchapter_3/lesson_2/s_4_3_2_2.dart';
 
 void main() {
   testWidgets('Validiert die Text-Widgets in der Column',
       (WidgetTester tester) async {
     await tester.pumpWidget(const MaterialApp(
-      home: S4532(),
+      home: S4322(),
     ));
 
     expect(find.byType(Column), findsOneWidget);
