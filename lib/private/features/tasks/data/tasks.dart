@@ -255,7 +255,7 @@ const TaskModel t_4_3_3_3 = TaskModel(
   taskText:
       """Verwende `Column`, `Row` und `Container` Widgets, um das im Bild dargestellte Ergebnis nachzubauen.
 Nutze Container der Größe 100 x 100.""",
-  taskImagePath: Assets.taskAsset4543,
+  taskImagePath: Assets.taskAsset4333,
 );
 
 /// Show Name Button
