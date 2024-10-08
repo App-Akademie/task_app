@@ -9,9 +9,15 @@ void main() {
       home: S4333(),
     ));
 
-    expect(find.byType(Column), findsOneWidget);
-
-    expect(find.byType(Row), findsNWidgets(2));
+    expect(
+      find.byType(Column).evaluate().length == 1 &&
+              find.byType(Row).evaluate().length == 2 ||
+          find.byType(Row).evaluate().length == 1 &&
+              find.byType(Column).evaluate().length == 2,
+      isTrue,
+      reason:
+          'Entweder sollte 1 Column und 2 Rows ODER 1 Row und 2 Columns gefunden werden',
+    );
 
     expect(find.byType(Container), findsNWidgets(4));
 
