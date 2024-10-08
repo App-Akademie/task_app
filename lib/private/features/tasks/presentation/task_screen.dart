@@ -76,7 +76,7 @@ class TaskTitle extends StatelessWidget {
             child: Text(
               text,
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                    color: Theme.of(context).colorScheme.onSurface,
+                    color: Theme.of(context).colorScheme.surface,
                     fontWeight: FontWeight.bold,
                   ),
             ),
