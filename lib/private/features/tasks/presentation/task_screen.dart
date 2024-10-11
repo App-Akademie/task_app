@@ -31,10 +31,12 @@ class TaskScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.all(Sizes.p16),
-          child: Center(
+      body: Padding(
+        padding: const EdgeInsets.all(Sizes.p16),
+        child: SingleChildScrollView(
+          child: SizedBox(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
             child: Column(
               children: [
                 const TaskTitle(text: "Aufgabe"),
@@ -47,7 +49,7 @@ class TaskScreen extends StatelessWidget {
                 gapH32,
                 const TaskTitle(text: "Lösung"),
                 gapH16,
-                task.solution ?? const UnsolvedTask(),
+                Expanded(child: task.solution ?? const UnsolvedTask())
               ],
             ),
           ),
@@ -56,6 +58,7 @@ class TaskScreen extends StatelessWidget {
     );
   }
 }
+
 
 class TaskTitle extends StatelessWidget {
   const TaskTitle({super.key, required this.text});
@@ -67,7 +70,7 @@ class TaskTitle extends StatelessWidget {
     return Row(
       children: [
         Container(
-          color: Theme.of(context).colorScheme.onBackground,
+          color: Theme.of(context).colorScheme.onSurface,
           child: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: Sizes.p16,
@@ -76,7 +79,7 @@ class TaskTitle extends StatelessWidget {
             child: Text(
               text,
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                    color: Theme.of(context).colorScheme.background,
+                    color: Theme.of(context).colorScheme.surface,
                     fontWeight: FontWeight.bold,
                   ),
             ),
