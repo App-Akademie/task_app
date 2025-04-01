@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/config/app_theme.dart';
 import 'package:task_app/private/features/tasks/models/task.dart';
 import 'package:task_app/private/features/tasks/presentation/unsolved_task.dart';
 import 'package:task_app/private/features/text_parsing/presentation/task_text.dart';
@@ -19,15 +20,12 @@ class TaskScreen extends StatelessWidget {
             Text(
               textAlign: TextAlign.start,
               "Kapitel ${task.chapter}: ${task.taskModel.lessonTitle}",
-              style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.tertiary),
+              style: context.textTheme.titleMedium,
             ),
             gapH4,
             Text(
                 "Aufgabe ${task.taskModel.fullTaskNumberString}: ${task.taskModel.taskTitel}",
-                style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                    color: Colors.white, fontWeight: FontWeight.bold)),
+                style: context.textTheme.headlineSmall),
           ],
         ),
       ),
@@ -67,19 +65,16 @@ class TaskTitle extends StatelessWidget {
     return Row(
       children: [
         Container(
-          color: Theme.of(context).colorScheme.onBackground,
+          color: context.colors.onSurface,
           child: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: Sizes.p16,
               vertical: Sizes.p4,
             ),
-            child: Text(
-              text,
-              style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                    color: Theme.of(context).colorScheme.background,
-                    fontWeight: FontWeight.bold,
-                  ),
-            ),
+            child: Text(text,
+                style: context.textTheme.titleLarge!.copyWith(
+                  color: context.colors.surface,
+                )),
           ),
         ),
       ],

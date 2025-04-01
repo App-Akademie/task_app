@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/config/app_theme.dart';
 import 'package:task_app/private/config/values.dart';
 import 'package:task_app/private/features/tasks/application/progress_calculation.dart';
 import 'package:task_app/private/features/tasks/application/solved_tasks.dart';
@@ -21,7 +22,7 @@ class Progress extends StatelessWidget {
       children: [
         Text(
             "$progressTitle: ${(progress * 100).toStringAsFixed(decimalPlaces)}%",
-            style: Theme.of(context).textTheme.titleMedium),
+            style: context.textTheme.titleMedium),
         gapH8,
         TweenAnimationBuilder<double>(
           duration: const Duration(seconds: 2),
