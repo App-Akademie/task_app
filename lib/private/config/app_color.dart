@@ -30,7 +30,18 @@ class AppColor extends ThemeExtension<AppColor> {
   });
 
   // no light theme yet
-  static AppColor get light => dark;
+  static AppColor get light => const AppColor(
+        primary: Palette.barcelonaOrange,
+        secondary: Palette.underwaterBlue,
+        accent: Palette.labelBackdrop,
+        elementBackgroundPrimary: Palette.blackOut300,
+        elementBackgroundSecondary: Palette.blackOut200,
+        surface: Palette.bgWhite,
+        onElementBackground: Palette.textBlack,
+        onSurface: Palette.textBlack,
+        radiusBorder: Palette.blackOut300,
+        error: Palette.errorRed,
+      );
 
   static AppColor get dark => const AppColor(
         primary: Palette.barcelonaOrange,

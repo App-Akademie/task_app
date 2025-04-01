@@ -5,7 +5,68 @@ import 'package:task_app/private/config/app_color.dart';
 final class AppTheme {
   AppTheme._();
 
-  static ThemeData get lightTheme => darkTheme;
+  static ThemeData get lightTheme => ThemeData.from(
+        textTheme: _lightTextTheme,
+        colorScheme: ColorScheme.fromSeed(
+          surface: AppColor.light.surface,
+          seedColor: AppColor.light.primary,
+          brightness: Brightness.light,
+        ),
+      ).copyWith(
+          extensions: {AppColor.light},
+          cardTheme: CardTheme(
+            color: AppColor.light.elementBackgroundPrimary,
+            margin: EdgeInsets.zero,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+          ),
+          progressIndicatorTheme: ProgressIndicatorThemeData(
+            color: AppColor.light.primary,
+            linearTrackColor: AppColor.light.elementBackgroundSecondary,
+            borderRadius: BorderRadius.circular(16),
+          ),
+          chipTheme: ChipThemeData(
+            backgroundColor: AppColor.light.elementBackgroundSecondary,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
+            side: BorderSide.none,
+            labelStyle: _lightTextTheme.bodySmall,
+            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+          ),
+          dividerTheme: DividerThemeData(
+            color: AppColor.light.onElementBackground,
+          ),
+          toggleButtonsTheme: ToggleButtonsThemeData(
+            borderRadius: BorderRadius.circular(16),
+            fillColor: AppColor.light.accent,
+            borderColor: AppColor.light.elementBackgroundPrimary,
+            splashColor: Colors.transparent,
+          ),
+          dialogTheme: DialogTheme(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16),
+            ),
+            backgroundColor: AppColor.light.elementBackgroundPrimary,
+          ),
+          inputDecorationTheme: InputDecorationTheme(
+            filled: true,
+            fillColor: AppColor.light.elementBackgroundSecondary,
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide.none,
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(16),
+              borderSide: BorderSide.none,
+            ),
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+          ),
+          appBarTheme: AppBarTheme(
+            backgroundColor: AppColor.light.primary,
+          ));
 
   static ThemeData get darkTheme => ThemeData.from(
         textTheme: _darkTextTheme,
@@ -13,12 +74,6 @@ final class AppTheme {
           surface: AppColor.dark.surface,
           seedColor: AppColor.dark.primary,
           brightness: Brightness.dark,
-
-          //   seedColor: barcelonaOrange,
-//   primary: barcelonaOrange,
-//   secondary: dreamlessBlack,
-//   brightness: Brightness.light,
-//   tertiary: dreamlessBlack,
         ),
       ).copyWith(
           extensions: {AppColor.dark},
