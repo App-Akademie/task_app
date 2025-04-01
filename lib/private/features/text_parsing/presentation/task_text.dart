@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task_app/private/config/app_theme.dart';
 import 'package:task_app/private/features/text_parsing/application/task_text_parser.dart';
 
 class TaskText extends StatefulWidget {
@@ -17,7 +18,7 @@ class _TaskTextState extends State<TaskText> {
       text: TextSpan(
         // Note: Styles for TextSpans must be explicitly defined.
         // Child text spans will inherit styles from parent
-        style: Theme.of(context).textTheme.titleMedium,
+        style: context.textTheme.titleMedium,
         children: <TextSpan>[
           for (final piece in pieces)
             TextSpan(

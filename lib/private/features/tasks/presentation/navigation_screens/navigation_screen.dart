@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
 import 'package:task_app/private/config/app_sizes.dart';
+import 'package:task_app/private/config/app_theme.dart';
 import 'package:task_app/private/config/assets.dart';
 import 'package:task_app/private/features/settings/data/settings_controller.dart';
 import 'package:task_app/private/features/settings/presentation/dark_mode_switch.dart';
@@ -71,7 +72,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Expanded(child: Text(widget.scaffoldTitle)),
+            Expanded(
+                child: Text(widget.scaffoldTitle,
+                    style: context.textTheme.headlineSmall)),
             widget.showDarkModeSwitch
                 ? Flexible(
                     child: DarkModeSwitch(
@@ -101,8 +104,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
                               widget.tasks,
                               getSolvedFunctionArgument(
                                   task, widget.navigationScreenType)))
-                      ? Icon(Icons.check,
-                          color: Theme.of(context).colorScheme.primary)
+                      ? Icon(Icons.check, color: context.colors.primary)
                       : const Icon(null),
                   title: Text(widget.tileTextFunction(task)),
                   onTap: () {
