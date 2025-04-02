@@ -4,8 +4,7 @@ import 'package:task_app/private/config/assets.dart';
 import 'package:task_app/private/features/settings/data/settings_controller.dart';
 
 class DarkModeSwitch extends StatefulWidget {
-  const DarkModeSwitch({Key? key, required this.settingsController})
-      : super(key: key);
+  const DarkModeSwitch({super.key, required this.settingsController});
   final SettingsController settingsController;
   @override
   DarkModeSwitchState createState() => DarkModeSwitchState();

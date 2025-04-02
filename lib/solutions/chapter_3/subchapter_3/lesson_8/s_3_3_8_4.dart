@@ -6,7 +6,7 @@ int countVowels(String input) {
 }
 
 class S3384 extends StatefulWidget {
-  const S3384({Key? key}) : super(key: key);
+  const S3384({super.key});
 
   @override
   State<S3384> createState() => _S3384State();

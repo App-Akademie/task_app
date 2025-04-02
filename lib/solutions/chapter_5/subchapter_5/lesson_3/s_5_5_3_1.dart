@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class S5531 extends StatelessWidget {
-  const S5531({Key? key}) : super(key: key);
+  const S5531({super.key});
   @override
   Widget build(BuildContext context) {
     throw UnimplementedError();

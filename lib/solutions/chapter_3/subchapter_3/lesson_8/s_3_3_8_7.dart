@@ -19,7 +19,7 @@ bool _isPinCorrect(String input) {
 const String _secretPinHashed = '2a0ebfb7c7ecc618493f4f6dfae77d2bccddc7ba';
 
 class S3387 extends StatefulWidget {
-  const S3387({Key? key}) : super(key: key);
+  const S3387({super.key});
 
   @override
   State<S3387> createState() => _S3387State();

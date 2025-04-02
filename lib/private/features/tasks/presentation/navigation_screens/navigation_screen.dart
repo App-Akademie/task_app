@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rive/rive.dart';
+import 'package:rive/rive.dart' hide Image;
 import 'package:task_app/private/config/app_sizes.dart';
 import 'package:task_app/private/config/app_theme.dart';
 import 'package:task_app/private/config/assets.dart';
@@ -36,7 +36,7 @@ class NavigationScreen extends StatefulWidget {
   final SettingsController settingsController;
   final bool showDarkModeSwitch;
   const NavigationScreen({
-    Key? key,
+    super.key,
     required this.navigationScreenType,
     required this.scaffoldTitle,
     required this.progressTitle,
@@ -48,7 +48,7 @@ class NavigationScreen extends StatefulWidget {
     required this.settingsController,
     this.showDarkModeSwitch = false,
     this.showAppBarIcon = false,
-  }) : super(key: key);
+  });
 
   @override
   State<NavigationScreen> createState() => _NavigationScreenState();

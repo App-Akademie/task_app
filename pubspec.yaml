@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: ^3.6.2
 
 dependencies:
   cached_network_image: ^3.2.3
@@ -12,22 +12,22 @@ dependencies:
   crypto: ^3.0.3
   flutter:
     sdk: flutter
-  flutter_launcher_icons: ^0.13.1
-  freezed_annotation: ^2.4.1
-  google_fonts: ^5.1.0
+  flutter_launcher_icons: ^0.14.3
+  freezed_annotation: ^3.0.0
+  google_fonts: ^6.2.1
   http: ^1.1.0
   image_picker: ^1.0.4
   json_annotation: ^4.8.0
-  rive: ^0.12.3
+  rive: ^0.13.20
   shared_preferences: ^2.2.2
   shimmer: ^3.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
   json_serializable: ^6.7.1
-  freezed: ^2.4.2
+  freezed: ^3.0.4
   build_runner: ^2.4.6
-  flutter_lints: ^2.0.1
+  flutter_lints: ^5.0.0
 
 flutter:
   uses-material-design: true

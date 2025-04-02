@@ -6,7 +6,7 @@ bool isAnagram(String word1, String word2) {
 }
 
 class S3386 extends StatefulWidget {
-  const S3386({Key? key}) : super(key: key);
+  const S3386({super.key});
 
   @override
   State<S3386> createState() => _S3386State();
