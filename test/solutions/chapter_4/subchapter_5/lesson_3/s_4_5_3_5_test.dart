@@ -18,9 +18,12 @@ void main() {
     final containerWidgets =
         tester.widgetList<Container>(find.byType(Container)).toList();
 
-    expect(containerWidgets[0].color, Colors.red);
-    expect(containerWidgets[1].color, Colors.green);
-    expect(containerWidgets[2].color, Colors.blue);
-    expect(containerWidgets[3].color, Colors.yellow);
+    List<Color> colors = [Colors.red, Colors.green, Colors.blue, Colors.yellow];
+    expect(containerWidgets.length, colors.length);
+
+    for (int i = 0; i < colors.length; i++) {
+      expect(containerWidgets[i].color ??
+          (containerWidgets[i].decoration as BoxDecoration).color, colors[i]);
+    }
   });
 }
