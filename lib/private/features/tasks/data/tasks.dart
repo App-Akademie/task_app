@@ -260,7 +260,7 @@ const TaskModel t_4_5_3_4 = TaskModel(
   taskTitel: "Space in Row",
   taskText:
       """Erstelle eine `Row` mit zwei `Text`-Elementen: `App` und `Akademie`.
-Sorge für einen Abstand von 64 Einheiten zwischen den beiden Texten, ohne dafür einen `Container` zu verwenden.""", //da
+Sorge mit einer `SizedBox` für einen Abstand von 64 Einheiten zwischen den beiden Texten.""", //da
 );
 
 /// Colorful Rectangle
