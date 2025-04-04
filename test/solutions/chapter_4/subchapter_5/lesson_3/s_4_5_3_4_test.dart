@@ -10,14 +10,19 @@ void main() {
       home: S4534(),
     ));
 
-    expect(find.byType(Row), findsOneWidget);
+    final rowFinder = find.byType(Row);
+    expect(rowFinder, findsOneWidget);
 
     expect(find.text('App'), findsOneWidget);
     expect(find.text('Akademie'), findsOneWidget);
+    int padding = 64;
+    if (find.byType(SizedBox).hasFound) {
+      expect(find.byType(SizedBox), findsOneWidget);
+      final sizedBox = tester.firstWidget<SizedBox>(find.byType(SizedBox));
+      expect(sizedBox.width, padding);
+    } else {
+      expect(tester.widget<Row>(rowFinder).spacing, padding);
+    }
 
-    expect(find.byType(SizedBox), findsOneWidget);
-
-    final sizedBox = tester.firstWidget<SizedBox>(find.byType(SizedBox));
-    expect(sizedBox.width, 64);
   });
 }
