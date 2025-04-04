@@ -16,7 +16,7 @@ void main() {
 
     final container = tester.firstWidget<Container>(find.byType(Container));
 
-    expect(container.color, Colors.blue);
+    expect(container.color ?? (container.decoration as BoxDecoration).color, Colors.blue);
     expect(container.constraints!.maxHeight, 150);
     expect(container.constraints!.maxWidth, 150);
 
